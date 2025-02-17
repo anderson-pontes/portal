@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import imgProdutividade from "@/assets/produtividade.png";
+import imgPCTA from "@/assets/pcta.png";
 import imgPcon from "@/assets/pcon.png";
 import imgPdm from "@/assets/pdm.png";
+import imgPDA from "@/assets/pda.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -13,7 +14,7 @@ export function HomeBancoPareceres() {
             title: "PCTA",
             description:
                 "Procuradoria Cível Trabalhista e Administrativa",
-            image: imgProdutividade,
+            image: imgPCTA,
             route: "/acompanhamentodeprodutividade",
         },
 
@@ -27,7 +28,7 @@ export function HomeBancoPareceres() {
             title: "PDA",
             description:
                 "Procuradoria da Dívida Ativa",
-            image: imgProdutividade,
+            image: imgPDA,
             route: "/panoramamunicipal"
         },
 

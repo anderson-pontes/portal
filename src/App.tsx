@@ -26,7 +26,7 @@ const newRoutes: RouteObject[] = [
   export const App = () => (
     <HelmetProvider>
       
-        <Helmet titleTemplate="LEXPGE | %s" />
+        <Helmet titleTemplate="INTRANET | %s" />
         <Toaster richColors />
         <ToastContainer />
         <QueryClientProvider client={queryClient}>
