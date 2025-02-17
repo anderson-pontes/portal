@@ -1,11 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import imgMaps from "@/assets/maps.png";
-import imgSaneamento from "@/assets/saneamento.png";
-import imgIndicadores from "@/assets/indicadores.png";
 import imgProdutividade from "@/assets/produtividade.png";
-import imgCamara from "@/assets/camara.png";
-import imgDespesa from "@/assets/despesa.png";
-import imgBancoAtos from "@/assets/imgBancoAtos.png";
+import imgPcon from "@/assets/pcon.png";
+import imgPdm from "@/assets/pdm.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -14,51 +10,34 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "ACOMPANHAMENTO DE PRODUTIVIDADE",
+            title: "PCTA",
             description:
-                "Monitoramento da produtividade e metas dos auditores estaduais",
+                "Procuradoria Cível Trabalhista e Administrativa",
             image: imgProdutividade,
             route: "/acompanhamentodeprodutividade",
         },
 
         {
-            title: "CÂMARAS EM FOCO",
-            description: "Panorama financeiro das câmaras municipais paraenses",
-            image: imgCamara,
+            title: "PDM",
+            description: "Procuradoria de Demandas de Massa",
+            image: imgPdm,
             route: "/camarasemfoco",
         },
         {
-            title: "PANORAMA MUNICIPAL - DESPESAS",
+            title: "PDA",
             description:
-                "Panorama das despesas dos municípios paraenses",
-            image: imgDespesa,
+                "Procuradoria da Dívida Ativa",
+            image: imgProdutividade,
             route: "/panoramamunicipal"
         },
 
         {
-            title: "INFORMAÇÕES DE SANEAMENTO",
-            description: "Informações de Saneamento Básico disponibilizadas no Sistema Nacional de Informações sobre Saneamento - SNIS",
-            image: imgSaneamento,
+            title: "PCON",
+            description: "Procuradoria Consultiva",
+            image: imgPcon,
             route: "/saneamento",
         },
-        {
-            title: "INDICADORES DE SANEAMENTO",
-            description: "Indicadores de Saneamento Básico disponibilizadas no Sistema Nacional de informações sobre Saneamento - SNIS",
-            image: imgIndicadores,
-            route: "/indicadores",
-        },
-        {
-            title: "JURISDICIONADOS",
-            description: "Levantamento das pessoas jurídicas subordinadas à jurisdição do TCE-PA",
-            image: imgMaps,
-            route: "/jurisdicionados",
-        },
-        {
-            title: "BASE DE CONHECIMENTO",
-            description: "Consulta abrangente de atos normativos da base de dados do TCE-PA",
-            image: imgBancoAtos,
-            route: "/pesquisaintegrada",
-        },
+        
         
 
 
@@ -72,7 +51,7 @@ export function Home() {
 
 
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo ao Banco de Dados de Pareceres da PGE-PA.
+                    Bem-vindo ao Banco de Dados de Pareceres da PGE-PA!
                 </h1>
 
 
@@ -107,7 +86,7 @@ export function Home() {
                                     >
                                         <Button variant="secondary" className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-slate-300'>
                                         <Eye className="h-5 w-5" />
-                                            Saiba mais
+                                            Acessar Arquivos
                                         </Button>
 
 
