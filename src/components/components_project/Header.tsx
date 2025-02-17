@@ -21,7 +21,7 @@ export function Header() {
                 <div className="flex items-center gap-4 pl-6">
                     <span className="font-semibold text-indigo-50 flex items-center gap-3">
                         <img className="h-12 w-15" src={Logo} alt="Logo" />
-                        PORTAL DA PROCURADORIA-GERAL DO ESTADO DO PARÁ
+                        INTRANET
                     </span>
                     <Separator orientation="vertical" className="h-6 hidden lg:block" />
                 </div>
@@ -31,7 +31,7 @@ export function Header() {
                     onClick={toggleMenu}
                     aria-label="Toggle Menu"
                 >
-                    
+
                     <Menu className="h-6 w-6 text-indigo-50" />
                 </button>
 
@@ -44,7 +44,7 @@ export function Header() {
                     <NavLink to="/" onClick={closeMenu}>
                         <div className="flex flex-row justify-center items-center gap-2 font-semibold hover:text-indigo-300">
                             <Home className="h-5 w-5" />
-                            Início
+                            Home
                         </div>
                     </NavLink>
                     

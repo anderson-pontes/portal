@@ -1,7 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import imgProdutividade from "@/assets/produtividade.png";
-import imgPcon from "@/assets/pcon.png";
-import imgPdm from "@/assets/pdm.png";
+import imgBancoPareceres from "@/assets/armazenamento-de-banco-de-dados.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -10,34 +8,14 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "PCTA",
+            title: "Banco de Pareceres",
             description:
-                "Procuradoria Cível Trabalhista e Administrativa",
-            image: imgProdutividade,
-            route: "/acompanhamentodeprodutividade",
+                "Banco de Pareceres da Procuradoria-Geral do Estado do Pará",
+            image: imgBancoPareceres,
+            route: "/bancodepareceres",
         },
 
-        {
-            title: "PDM",
-            description: "Procuradoria de Demandas de Massa",
-            image: imgPdm,
-            route: "/camarasemfoco",
-        },
-        {
-            title: "PDA",
-            description:
-                "Procuradoria da Dívida Ativa",
-            image: imgProdutividade,
-            route: "/panoramamunicipal"
-        },
-
-        {
-            title: "PCON",
-            description: "Procuradoria Consultiva",
-            image: imgPcon,
-            route: "/saneamento",
-        },
-        
+       
         
 
 
@@ -51,7 +29,7 @@ export function Home() {
 
 
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo ao Banco de Dados de Pareceres da PGE-PA!
+                    Bem-vindo ao Portal da Procuradoria-Geral do Estado do Pará!
                 </h1>
 
 
@@ -86,7 +64,7 @@ export function Home() {
                                     >
                                         <Button variant="secondary" className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-slate-300'>
                                         <Eye className="h-5 w-5" />
-                                            Acessar Arquivos
+                                            Acessar Sistema
                                         </Button>
 
 
