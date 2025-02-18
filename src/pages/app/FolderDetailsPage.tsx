@@ -3,8 +3,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { CornerDownLeft, FileText, Plus } from "lucide-react";
+import { ChevronDown, CornerDownLeft, FileText, Plus } from "lucide-react";
 import { Input } from '@/components/ui/input';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 // Definindo os tipos dos arquivos
 interface File {
@@ -73,9 +74,20 @@ export default function FolderDetailsPage() {
           onChange={(e) => setSearch(e.target.value)}
           className="w-1/3"
         />
-        <Button className="flex items-center gap-2">
-          <Plus size={16} /> Adicionar Arquivo
-        </Button>
+        
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button className="flex items-center gap-2">
+              <Plus size={16} /> 
+              Criar 
+              <ChevronDown size={16} />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">            
+            <DropdownMenuItem>Pasta</DropdownMenuItem>
+            <DropdownMenuItem>Arquivo</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       
 

@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Folder, FileText, Plus, ChevronDown, CornerDownLeft } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Folder, FileText, Plus, CornerDownLeft } from "lucide-react";
+
 
 const data = [
   { id: 1, name: "MILITAR", type: "folder", date: "06/03/2024", status: "✔️ Concluído", questions: 45 },
@@ -35,17 +35,10 @@ export default function FileManagerPage() {
           onChange={(e) => setSearch(e.target.value)}
           className="w-1/3"
         />
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button className="flex items-center gap-2">
-              <Plus size={16} /> Criar <ChevronDown size={16} />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">            
-            <DropdownMenuItem>Assunto</DropdownMenuItem>
-            <DropdownMenuItem>Arquivo</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <Button className="flex items-center gap-2">
+          <Plus size={16} /> 
+            Criar Pasta
+        </Button>
       </div>
 
       <Card>
