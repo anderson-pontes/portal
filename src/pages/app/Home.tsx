@@ -3,6 +3,7 @@ import imgBancoPareceres from "@/assets/armazenamento-de-banco-de-dados.png";
 import imgSida from "@/assets/logosida.png";
 import imgLexPge from "@/assets/pcon.png";
 import imgBuscaDoe from "@/assets/busca.png";
+import imgSuporteDtigd from "@/assets/suporte.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -10,7 +11,7 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "Banco de Pareceres",
+            title: "BANCO DE TESES",
             description: "Banco de Pareceres da Procuradoria-Geral do Estado do Pará",
             image: imgBancoPareceres,
             route: "/bancodepareceres",
@@ -32,6 +33,12 @@ export function Home() {
             description: "Sistema de Busca Avançado de Diários Oficiais do Estado do Pará",
             image: imgBuscaDoe,
             externalLink: "http://buscadoe.pge.pa.gov.br/",
+        },
+        {
+            title: "SUPORTE DTIGD",
+            description: "Sistema de Suporte da Diretoria de Tecnologia da Informação e Gestão Documental",
+            image: imgSuporteDtigd,
+            externalLink: "http://suportedti.pge.pa.gov.br/",
         },
     ];
 
