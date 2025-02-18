@@ -41,8 +41,8 @@ const filesData: Record<string, File[]> = {
   ],
 };
 
-export default function FolderDetailsPage() {
-  const { folderId } = useParams<{ folderId: string }>(); 
+export default function SubfolderDetailsPage() {
+  const { folderId, subfolderId } = useParams<{ folderId: string, subfolderId: string }>(); 
   const navigate = useNavigate();
   
   const [folderData, setFolderData] = useState<string | null>(null); 
@@ -50,16 +50,16 @@ export default function FolderDetailsPage() {
   const [search, setSearch] = useState(""); // Estado para a busca
 
   useEffect(() => {
-    if (folderId) {
-      const folder = filesData[folderId];
+    if (folderId && subfolderId) {
+      const folder = filesData[`${folderId}/${subfolderId}`];
       if (folder) {
         setFiles(folder);
-        setFolderData(`Assunto: ${folderId === "1" ? "MILITAR" : folderId === "2" ? "CIVIL" : folderId === "3" ? "TRABALHISTA" : "SAÚDE"}`);
+        setFolderData(`Caminho: MILITAR / Tese Militar 1`);
       } else {
         navigate("/"); 
       }
     }
-  }, [folderId, navigate]);
+  }, [folderId, subfolderId, navigate]);
 
   // Filtrando arquivos e pastas com base no nome
   const filteredFiles = files.filter(file =>
@@ -68,7 +68,7 @@ export default function FolderDetailsPage() {
 
   return (
     <div className="p-6 space-y-6">
-      <Button onClick={() => navigate("/pcta")} className="flex items-center gap-1" variant="ghost">
+      <Button onClick={() => navigate(`/folder/${folderId}`)} className="flex items-center gap-1" variant="ghost">
         <CornerDownLeft size={16} />
         Voltar
       </Button>
@@ -111,13 +111,8 @@ export default function FolderDetailsPage() {
             </TableHeader>
             <TableBody>
               {filteredFiles.map((file) => (
-                <TableRow 
-                key={file.id}
-                onClick={() => file.type === "folder" && navigate(`/pcta/${folderId}/${file.id}`)}
-                className="cursor-pointer"
-
-                >
-                  <TableCell className="flex items-center gap-2 cursor-pointer">
+                <TableRow key={file.id}>
+                  <TableCell className="flex items-center gap-2">
                     {file.type === "folder" ? (
                       <Folder size={18} />
                     ) : (
