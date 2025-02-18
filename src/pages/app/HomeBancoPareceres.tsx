@@ -15,7 +15,7 @@ export function HomeBancoPareceres() {
             description:
                 "Procuradoria Cível Trabalhista e Administrativa",
             image: imgPCTA,
-            route: "/acompanhamentodeprodutividade",
+            route: "/pcta",
         },
 
         {

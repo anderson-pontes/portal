@@ -14,7 +14,7 @@ export function Home() {
             title: "BANCO DE TESES",
             description: "Banco de Pareceres da Procuradoria-Geral do Estado do Pará",
             image: imgBancoPareceres,
-            route: "/bancodepareceres",
+            route: "/bancodeteses",
         },
         {
             title: "SIDA",

@@ -9,12 +9,10 @@ import { SearchProvider } from '@/Context/SearchContext';
 import { queryClient } from './lib/react-query';
 import { RouterProvider, RouteObject } from 'react-router-dom';
 import { QueryClientProvider } from '@tanstack/react-query';
-import SearchPage from '@/pages/app/SearchPage';
 import ResultsPage from '@/pages/app/ResultsPage';
 
 
-const newRoutes: RouteObject[] = [
-    { path: "/pesquisaintegrada", element: <SearchPage /> },
+const newRoutes: RouteObject[] = [    
     { path: "/pesquisaintegrada/results", element: <ResultsPage /> },
   ];
   
