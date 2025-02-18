@@ -1,19 +1,22 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Folder, FileText, Plus } from "lucide-react";
+import { Folder, FileText, Plus, ChevronDown } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const data = [
-  { id: 1, name: "MILITAR", type: "folder", date: "06/03/2024", status: "✔️ Concluído" },
-  { id: 2, name: "CIVIL", type: "folder", date: "17/02/2025", status: "Em andamento" },
-  { id: 3, name: "TRABALHISTA", type: "folder", date: "03/02/2025", status: "✔️ Concluído", questions: 276 },
-  { id: 4, name: "SAÚDE", type: "folder", date: "22/01/2025", status: "Pendente" },
+  { id: 1, name: "MILITAR", type: "folder", date: "06/03/2024", status: "✔️ Concluído", questions: 45 },
+  { id: 2, name: "CIVIL", type: "folder", date: "17/02/2025", status: "Em andamento", questions: 106 },
+  { id: 3, name: "TRABALHISTA", type: "folder", date: "03/02/2025", status: "✔️ Concluído", questions: 76 },
+  { id: 4, name: "SAÚDE", type: "folder", date: "22/01/2025", status: "Pendente", questions: 26 },
 ];
 
 export default function FileManagerPage() {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   const filteredData = data.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase())
@@ -28,9 +31,17 @@ export default function FileManagerPage() {
           onChange={(e) => setSearch(e.target.value)}
           className="w-1/3"
         />
-        <Button className="flex items-center gap-2">
-          <Plus size={16} /> Criar
-        </Button>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button className="flex items-center gap-2">
+              <Plus size={16} /> Criar <ChevronDown size={16} />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">            
+            <DropdownMenuItem>Assunto</DropdownMenuItem>
+            <DropdownMenuItem>Arquivo</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
 
       <Card>
@@ -50,7 +61,7 @@ export default function FileManagerPage() {
             <TableBody>
               {filteredData.map((item) => (
                 <TableRow key={item.id}>
-                  <TableCell className="flex items-center gap-2">
+                  <TableCell className="flex items-center gap-2 cursor-pointer" onClick={() => navigate(`/folder/${item.id}`)}>
                     {item.type === "folder" ? <Folder size={18} /> : <FileText size={18} />}
                     {item.name}
                   </TableCell>
