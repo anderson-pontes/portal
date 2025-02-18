@@ -17,13 +17,14 @@ export function AppLayout() {
       </div>
 
       {/* Ajuste de padding para páginas de tela cheia */}
-      <div className={`flex flex-1 flex-col gap-4 w-screen overflow-auto ${isFullscreenPage ? "p-0" : "p-8 pt-6"} bg-blue-100`}>
+      <div className={`flex flex-1 flex-col gap-4 w-screen overflow-y-auto thin-scrollbar ${isFullscreenPage ? "p-0" : "p-8 pt-6"} bg-blue-100`}>
         <Outlet />
       {/* Footer visível em todas as páginas */}
+      
+      </div>
       <footer className="text-sm text-muted-foreground text-center p-6 w-full bg-blue-100">
         Copyright &copy; DTIGD {new Date().getFullYear()} | PGE-PA | Todos os direitos reservados.
       </footer>
-      </div>
 
     </div>
   );

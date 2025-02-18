@@ -88,3 +88,28 @@
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+    .thin-scrollbar::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  
+    .thin-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+  
+    .thin-scrollbar::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 4px;
+    }
+  
+    .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+  
+    .thin-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: #94a3b8 #f1f5f9;
+    }
+  }
