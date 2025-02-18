@@ -20,7 +20,7 @@ export function Home() {
             title: "SIDA",
             description: "Sistema de Inteligência da Procuradoria da Dívida Ativa",
             image: imgSida,
-            externalLink: "https://sida.pge.pa.gov.br", // URL externa
+            externalLink: "https://sida.pge.pa.gov.br",
         },
         {
             title: "LEXPGE",

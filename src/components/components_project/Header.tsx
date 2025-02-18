@@ -16,7 +16,7 @@ export function Header() {
     };
 
     return (
-        <div className={`border-b ${isMenuOpen ? "mb-40" : ""}`}>
+        <div className={`border-b ${isMenuOpen ? "mb-14" : ""}`}>
             <div className="flex h-16 items-center gap-6 justify-start w-screen bg-gradient-to-r from-blue-400 to-indigo-600 shadow-lg">
                 <div className="flex items-center gap-4 pl-6">
                     <span className="font-semibold text-indigo-50 flex items-center gap-3">
