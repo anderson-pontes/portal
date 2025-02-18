@@ -3,7 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { FileText, Plus } from "lucide-react";
+import { CornerDownLeft, FileText, Plus } from "lucide-react";
+import { Input } from '@/components/ui/input';
 
 // Definindo os tipos dos arquivos
 interface File {
@@ -40,6 +41,7 @@ export default function FolderDetailsPage() {
   
   const [folderData, setFolderData] = useState<string | null>(null); 
   const [files, setFiles] = useState<File[]>([]); 
+  const [search, setSearch] = useState(""); // Estado para a busca
 
   useEffect(() => {
     if (folderId) {
@@ -53,16 +55,30 @@ export default function FolderDetailsPage() {
     }
   }, [folderId, navigate]);
 
+  // Filtrando arquivos com base no nome
+  const filteredFiles = files.filter(file =>
+    file.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="p-6 space-y-6">
-        <div className="flex justify-between">
-        <Button onClick={() => navigate("/pcta")} className="flex items-center gap-2">
-          Voltar
+        <Button onClick={() => navigate("/pcta")} className="flex items-center gap-1" variant="ghost">
+            <CornerDownLeft size={16} />
+            Voltar
         </Button>
+        <div className="flex justify-between">
+        <Input
+          placeholder="Buscar por nome do arquivo"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-1/3"
+        />
         <Button className="flex items-center gap-2">
           <Plus size={16} /> Adicionar Arquivo
         </Button>
       </div>
+      
+
       <Card>
         <CardHeader>
           <CardTitle>{folderData}</CardTitle>
@@ -77,7 +93,7 @@ export default function FolderDetailsPage() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {files.map((file) => (
+              {filteredFiles.map((file) => (
                 <TableRow key={file.id}>
                   <TableCell className="flex items-center gap-2 cursor-pointer">
                     <FileText size={18} /> {file.name}
@@ -90,7 +106,6 @@ export default function FolderDetailsPage() {
           </Table>
         </CardContent>
       </Card>
-      
     </div>
   );
 }

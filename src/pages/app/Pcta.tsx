@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Folder, FileText, Plus, ChevronDown } from "lucide-react";
+import { Folder, FileText, Plus, ChevronDown, ChevronLeft, CornerDownLeft } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const data = [
@@ -24,6 +24,10 @@ export default function FileManagerPage() {
 
   return (
     <div className="p-6 space-y-6">
+        <Button onClick={() => navigate("/")} className="flex items-center gap-1" variant="ghost">
+            <CornerDownLeft size={16} />
+            Voltar
+        </Button>
       <div className="flex justify-between items-center">
         <Input
           placeholder="Busque pelo nome"
