@@ -99,7 +99,7 @@ export default function SubfolderDetailsPage() {
             const folder = filesData[path];
             if (folder) {
                 setFiles(folder);
-                setFolderData(`PASTAS - PCTA 1 - CONTEÚDO - COORDENAÇÃO - PLANILHAS`);
+                setFolderData(`PASTAS - PCTA1 - CONTEÚDO - ${folderId === "1" ? "COORDENAÇÃO" : folderId === "2" ? "SUBNÚCLEO SERVIDOR CIVIL" : folderId === "3" ? "TRABALHISTA" : "SAÚDE"}`);
             } else {
                 navigate("/");
             }
