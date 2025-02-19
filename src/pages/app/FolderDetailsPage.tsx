@@ -93,8 +93,8 @@ export default function FolderDetailsPage() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">            
-            <DropdownMenuItem>Pasta</DropdownMenuItem>
-            <DropdownMenuItem>Arquivo</DropdownMenuItem>
+            <DropdownMenuItem>Criar Pasta</DropdownMenuItem>
+            <DropdownMenuItem>Criar Arquivo</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

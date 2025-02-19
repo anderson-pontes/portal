@@ -23,7 +23,7 @@ export default function FileManagerPage() {
 
   return (
     <div className="p-6 space-y-6">
-        <Button onClick={() => navigate("/")} className="flex items-center gap-1" variant="ghost">
+        <Button onClick={() => navigate("/bancodeteses")} className="flex items-center gap-1" variant="ghost">
             <CornerDownLeft size={16} />
             Voltar
         </Button>

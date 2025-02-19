@@ -6,7 +6,8 @@ import { HomeBancoPareceres } from '@/pages/app/HomeBancoPareceres';
 import HomePcta from '@/pages/app/Pcta';
 import FolderDetailsPage from '@/pages/app/FolderDetailsPage';
 import SubfolderDetailsPage from '@/pages/app/SubfolderDetailsPage';
-import ManageFolderPage from '@/pages/app/ManageFolderPage'; // Importe a página de gerenciamento
+import ManageFolderPage from '@/pages/app/ManageFolderPage';
+import CreateItemPage from '@/pages/app/CreateItemPage'; // Importe a nova página
 
 export const Router = createHashRouter([
   {
@@ -55,6 +56,16 @@ export const Router = createHashRouter([
         loader: ({ params }: LoaderFunctionArgs) => {
           const folderId = params.folderId;
           return { folderId }; // Retornando folderId para o componente de gerenciamento
+        },
+      },
+
+      // Rota para criar novos itens (CreateItemPage)
+      {
+        path: '/folder/:folderId/create',
+        element: <CreateItemPage />,
+        loader: ({ params }: LoaderFunctionArgs) => {
+          const folderId = params.folderId;
+          return { folderId }; // Retornando folderId para o componente de criação
         },
       },
     ],
