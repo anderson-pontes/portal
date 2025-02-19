@@ -19,14 +19,18 @@ interface File {
 // Dados simulados das pastas e arquivos
 const filesData: Record<string, File[]> = {
   "1": [ // Pasta "MILITAR"
-    { id: 1, name: "Arquivo1.pdf", type: "file", size: "2MB", observation: 'Arquivado para elaboração de novo documento' },
-    { id: 2, name: "Arquivo2.docx", type: "file", size: "1.5MB", observation: 'Alterar arquivo' },
-    { id: 3, name: "Arquivo3.pptx", type: "file", size: "3MB" },
-    { id: 4, name: "Tese Militar 1", type: "folder", size: "20MB" }, // Pasta dentro da pasta MILITAR
+    { id: 1, name: "PLANILHAS", type: "folder", size: "2MB", observation: 'Arquivado para elaboração de novo documento' },
+    { id: 2, name: "MODELOS DE DESPACHOS E PROCESSOS PARADIGMAS", type: "folder", size: "1.5MB", observation: 'Alterar arquivo' },
+    { id: 3, name: "ORDENS DE SERVIÇO", type: "folder", size: "3MB" },
+    { id: 4, name: "MANUAIS PCTA", type: "folder", size: "20MB" }, // Pasta dentro da pasta MILITAR
   ],
   "1/4": [
     { id: 10, name: "Tese1.pdf", type: "file", size: "5MB" },
     { id: 11, name: "Tese2.docx", type: "file", size: "3MB" }
+  ],
+  "1/1": [
+    { id: 12, name: "Tese11.pdf", type: "file", size: "5MB" },
+    { id: 13, name: "Tese12.docx", type: "file", size: "3MB" }
   ],
   "2": [ // Pasta "CIVIL"
     { id: 5, name: "Arquivo4.pdf", type: "file", size: "2MB" },
@@ -54,9 +58,9 @@ export default function FolderDetailsPage() {
       const folder = filesData[folderId];
       if (folder) {
         setFiles(folder);
-        setFolderData(`Assunto: ${folderId === "1" ? "MILITAR" : folderId === "2" ? "CIVIL" : folderId === "3" ? "TRABALHISTA" : "SAÚDE"}`);
+        setFolderData(`PASTAS - PCTA1 - CONTEÚDO - ${folderId === "1" ? "COORDENAÇÃO" : folderId === "2" ? "SUBNÚCLEO SERVIDOR CIVIL" : folderId === "3" ? "TRABALHISTA" : "SAÚDE"}`);
       } else {
-        navigate("/"); 
+        navigate("/folder"); 
       }
     }
   }, [folderId, navigate]);
@@ -113,7 +117,7 @@ export default function FolderDetailsPage() {
               {filteredFiles.map((file) => (
                 <TableRow 
                 key={file.id}
-                onClick={() => file.type === "folder" && navigate(`/pcta/${folderId}/${file.id}`)}
+                onClick={() => file.type === "folder" && navigate(`/folder/${folderId}/${file.id}`)}
                 className="cursor-pointer"
 
                 >

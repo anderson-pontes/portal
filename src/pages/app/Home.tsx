@@ -11,8 +11,8 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "BANCO DE TESES",
-            description: "Banco de Pareceres da Procuradoria-Geral do Estado do Pará",
+            title: "NORMAS E PADRONIZAÇÃO",
+            description: "Banco de Arquivos da Procuradoria-Geral do Estado do Pará",
             image: imgBancoPareceres,
             route: "/bancodeteses",
         },

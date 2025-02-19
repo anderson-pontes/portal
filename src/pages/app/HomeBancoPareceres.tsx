@@ -1,8 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import imgPCTA from "@/assets/pcta.png";
-import imgPcon from "@/assets/pcon.png";
-import imgPdm from "@/assets/pdm.png";
-import imgPDA from "@/assets/pda.png";
+import imgPCTA2 from "@/assets/pcta2.png";
+import imgPCAD from "@/assets/contenciso.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -11,7 +10,7 @@ import { Eye } from 'lucide-react';
 export function HomeBancoPareceres() {
     const flashcards = [
         {
-            title: "PCTA",
+            title: "PCTA 1",
             description:
                 "Procuradoria Cível Trabalhista e Administrativa",
             image: imgPCTA,
@@ -19,25 +18,18 @@ export function HomeBancoPareceres() {
         },
 
         {
-            title: "PDM",
-            description: "Procuradoria de Demandas de Massa",
-            image: imgPdm,
+            title: "PCAD",
+            description: "Procuradoria do Contencioso Administrativo",
+            image: imgPCAD,
             route: "/camarasemfoco",
         },
         {
-            title: "PDA",
+            title: "PCTA 2",
             description:
-                "Procuradoria da Dívida Ativa",
-            image: imgPDA,
+                "Procuradoria Cível Trabalhista e Administrativa",
+            image: imgPCTA2,
             route: "/panoramamunicipal"
-        },
-
-        {
-            title: "PCON",
-            description: "Procuradoria Consultiva",
-            image: imgPcon,
-            route: "/saneamento",
-        },     
+        },          
         
 
 

@@ -8,10 +8,9 @@ import { Folder, FileText, Plus, CornerDownLeft } from "lucide-react";
 
 
 const data = [
-  { id: 1, name: "MILITAR", type: "folder", date: "06/03/2024", status: "✔️ Concluído", questions: 45 },
-  { id: 2, name: "CIVIL", type: "folder", date: "17/02/2025", status: "Em andamento", questions: 106 },
-  { id: 3, name: "TRABALHISTA", type: "folder", date: "03/02/2025", status: "✔️ Concluído", questions: 76 },
-  { id: 4, name: "SAÚDE", type: "folder", date: "22/01/2025", status: "Pendente", questions: 26 },
+  { id: 1, name: "COORDENAÇÃO", type: "folder", date: "06/03/2024", status: "✔️ Concluído", questions: 45 },
+  { id: 2, name: "SUBNÚCLEO SERVIDOR CIVIL", type: "folder", date: "17/02/2025", status: "Em andamento", questions: 106 },
+  
 ];
 
 export default function FileManagerPage() {
@@ -43,7 +42,7 @@ export default function FileManagerPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Arquivos e Pastas</CardTitle>
+          <CardTitle>PASTAS - PCTA1 - CONTEÚDO</CardTitle>
         </CardHeader>
         <CardContent>
           <Table>
