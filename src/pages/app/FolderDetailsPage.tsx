@@ -18,31 +18,18 @@ interface File {
 
 // Dados simulados das pastas e arquivos
 const filesData: Record<string, File[]> = {
-  "1": [ // Pasta "MILITAR"
+  "1": [ // Pasta COORDENAÇÃO"
     { id: 1, name: "PLANILHAS", type: "folder", size: "2MB", observation: 'Arquivado para elaboração de novo documento' },
     { id: 2, name: "MODELOS DE DESPACHOS E PROCESSOS PARADIGMAS", type: "folder", size: "1.5MB", observation: 'Alterar arquivo' },
     { id: 3, name: "ORDENS DE SERVIÇO", type: "folder", size: "3MB" },
     { id: 4, name: "MANUAIS PCTA", type: "folder", size: "20MB" }, // Pasta dentro da pasta MILITAR
+  ],  
+  
+  "2": [ // PASTA SUBNÚCLEO SERVIDOR CIVIL
+    { id: 1, name: "INFORMAÇÕES GERAIS", type: "folder", size: "2MB" },
+    { id: 2, name: "ASSUNTOS / MATÉRIAS", type: "folder", size: "1MB" },
   ],
-  "1/4": [
-    { id: 10, name: "Tese1.pdf", type: "file", size: "5MB" },
-    { id: 11, name: "Tese2.docx", type: "file", size: "3MB" }
-  ],
-  "1/1": [
-    { id: 12, name: "Tese11.pdf", type: "file", size: "5MB" },
-    { id: 13, name: "Tese12.docx", type: "file", size: "3MB" }
-  ],
-  "2": [ // Pasta "CIVIL"
-    { id: 5, name: "Arquivo4.pdf", type: "file", size: "2MB" },
-    { id: 6, name: "Arquivo5.docx", type: "file", size: "1MB" },
-  ],
-  "3": [ // Pasta "TRABALHISTA"
-    { id: 7, name: "Arquivo6.pdf", type: "file", size: "2.5MB" },
-    { id: 8, name: "Arquivo7.docx", type: "file", size: "3MB" },
-  ],
-  "4": [ // Pasta "SAÚDE"
-    { id: 9, name: "Arquivo8.pdf", type: "file", size: "2MB" },
-  ],
+  
 };
 
 export default function FolderDetailsPage() {

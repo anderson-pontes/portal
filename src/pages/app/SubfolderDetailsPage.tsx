@@ -41,17 +41,48 @@ const filesData: Record<string, File[]> = {
         { id: 19, name: "Arquivo5.pdf", type: "file", size: "2MB" },
         { id: 20, name: "Arquivo6.pdf", type: "file", size: "2MB" },
     ],
-    "2": [
-        { id: 5, name: "Arquivo4.pdf", type: "file", size: "2MB" },
-        { id: 6, name: "Arquivo5.docx", type: "file", size: "1MB" },
+
+    "2": [ // PASTA SUBNÚCLEO SERVIDOR CIVIL
+    { id: 1, name: "INFORMAÇÕES GERAIS", type: "folder", size: "2MB" },
+    { id: 2, name: "ASSUNTOS / MATÉRIAS", type: "folder", size: "1MB" },
+  ],
+    "2/1": [
+        { id: 5, name: "ORDENS DE SERVIÇO", type: "folder", size: "2MB" },
+        { id: 6, name: "CONFLITOS DE COMPETÊNCIA", type: "folder", size: "1MB" },
+        { id: 7, name: "EMENTÁRIO/TESES/MODELOS", type: "folder", size: "1MB" },
+        { id: 8, name: "CHECKLIST- NUATOS E FLUXOGRAMA (Quando já implementado para referida matéria", type: "folder", size: "1MB" },
     ],
-    "3": [
-        { id: 7, name: "Arquivo6.pdf", type: "file", size: "2.5MB" },
-        { id: 8, name: "Arquivo7.docx", type: "file", size: "3MB" },
+
+    "2/1/5": [
+        { id: 15, name: "Arquivo1.pdf", type: "file", size: "1MB" },
+        { id: 16, name: "Arquivo2.pdf", type: "file", size: "2MB" },
+        { id: 17, name: "Arquivo3.pdf", type: "file", size: "2MB" },
+        { id: 18, name: "Arquivo4.pdf", type: "file", size: "2MB" },
+        { id: 19, name: "Arquivo5.pdf", type: "file", size: "2MB" },
+        { id: 20, name: "Arquivo6.pdf", type: "file", size: "2MB" },
     ],
-    "4": [
-        { id: 9, name: "Arquivo8.pdf", type: "file", size: "2MB" },
+    "2/1/6": [
+        { id: 15, name: "Arquivo1.pdf", type: "file", size: "1MB" },
+        { id: 16, name: "Arquivo2.pdf", type: "file", size: "2MB" },
+        { id: 17, name: "Arquivo3.pdf", type: "file", size: "2MB" },
+        { id: 18, name: "Arquivo4.pdf", type: "file", size: "2MB" },
+        { id: 19, name: "Arquivo5.pdf", type: "file", size: "2MB" },
+        { id: 20, name: "Arquivo6.pdf", type: "file", size: "2MB" },
     ],
+    "2/2": [
+        { id: 5, name: "ASSUNTO X", type: "folder", size: "2MB" },
+        { id: 6, name: "ASSUNTO Y", type: "folder", size: "1MB" },
+        { id: 7, name: "ASSUNTO Z", type: "folder", size: "1MB" },
+    ],
+    "2/2/5": [
+        { id: 15, name: "Arquivo1.pdf", type: "file", size: "1MB" },
+        { id: 16, name: "Arquivo2.pdf", type: "file", size: "2MB" },
+        { id: 17, name: "Arquivo3.pdf", type: "file", size: "2MB" },
+        { id: 18, name: "Arquivo4.pdf", type: "file", size: "2MB" },
+        { id: 19, name: "Arquivo5.pdf", type: "file", size: "2MB" },
+        { id: 20, name: "Arquivo6.pdf", type: "file", size: "2MB" },
+    ],
+    
 };
 
 export default function SubfolderDetailsPage() {
