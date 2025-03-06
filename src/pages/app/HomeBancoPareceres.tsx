@@ -43,7 +43,7 @@ export function HomeBancoPareceres() {
 
 
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo ao Banco de Dados de Pareceres da PGE-PA!
+                    Bem-vindo ao Banco de Normas e Padronização da Procuradoria-Geral do Estado!
                 </h1>
 
 

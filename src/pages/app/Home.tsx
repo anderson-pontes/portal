@@ -4,6 +4,7 @@ import imgSida from "@/assets/logosida.png";
 import imgLexPge from "@/assets/pcon.png";
 import imgBuscaDoe from "@/assets/busca.png";
 import imgSuporteDtigd from "@/assets/suporte.png";
+import imgNuvem from "@/assets/nuvem.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -35,10 +36,16 @@ export function Home() {
             externalLink: "http://buscadoe.pge.pa.gov.br/",
         },
         {
-            title: "SUPORTE DTIGD",
-            description: "Sistema de Suporte da Diretoria de Tecnologia da Informação e Gestão Documental",
+            title: "SUPORTE DTI",
+            description: "Sistema de Suporte da Diretoria de Tecnologia da Informação",
             image: imgSuporteDtigd,
             externalLink: "http://suportedti.pge.pa.gov.br/",
+        },
+        {
+            title: "NUVEM PGE",
+            description: "Sistema de Armazenamento de Arquivos da Procuradoria-Geral do Estado do Pará",
+            image: imgNuvem,
+            externalLink: "http://10.96.20.17/",
         },
     ];
 
@@ -47,7 +54,7 @@ export function Home() {
             <Helmet title="Home" />
             <div className="p-6 min-h-screen">
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo ao Portal da Procuradoria-Geral do Estado do Pará!
+                    Bem-vindo a Intranet da Procuradoria-Geral do Estado do Pará!
                 </h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
