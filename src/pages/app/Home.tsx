@@ -61,7 +61,7 @@ export function Home() {
             <Helmet title="Home" />
             <div className="p-6 min-h-screen">
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo à Intranet da Procuradoria-Geral do Estado do Pará!
+                    Sistemas da Procuradoria-Geral do Estado do Pará
                 </h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
