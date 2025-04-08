@@ -46,7 +46,7 @@ export function Home() {
             title: "NUVEM PGE",
             description: "Sistema de Armazenamento de Arquivos da Procuradoria-Geral do Estado do Pará",
             image: imgNuvem,
-            externalLink: "http://10.96.20.17/",
+            externalLink: "https://cloud.pge.pa.gov.br/",
         },
         {
             title: "GDAP",
