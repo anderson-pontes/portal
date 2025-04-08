@@ -5,6 +5,7 @@ import imgLexPge from "@/assets/pcon.png";
 import imgBuscaDoe from "@/assets/busca.png";
 import imgSuporteDtigd from "@/assets/suporte.png";
 import imgNuvem from "@/assets/nuvem.png";
+import imgGdap from "@/assets/gdap.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -12,10 +13,10 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "NORMAS E PADRONIZAÇÃO",
-            description: "Banco de Arquivos da Procuradoria-Geral do Estado do Pará",
+            title: "e-CONSULTA",
+            description: "Sistema de Consulta de Processos do e-PGE",
             image: imgBancoPareceres,
-            route: "/bancodeteses",
+            externalLink: "http://10.96.0.54:4000",
         },
         {
             title: "SIDA",
@@ -47,6 +48,12 @@ export function Home() {
             image: imgNuvem,
             externalLink: "http://10.96.20.17/",
         },
+        {
+            title: "GDAP",
+            description: "Gratificação de Desempenho de Apoio à Procuradoria",
+            image: imgGdap,
+            externalLink: "http://10.96.0.26:8080/gdap/",
+        },
     ];
 
     return (
@@ -54,7 +61,7 @@ export function Home() {
             <Helmet title="Home" />
             <div className="p-6 min-h-screen">
                 <h1 className="text-3xl text-blue-800/80 font-bold mb-8 text-center">
-                    Bem-vindo a Intranet da Procuradoria-Geral do Estado do Pará!
+                    Bem-vindo à Intranet da Procuradoria-Geral do Estado do Pará!
                 </h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -95,10 +102,7 @@ export function Home() {
                                             </Button>
                                         </a>
                                     ) : (
-                                        <Link
-                                            to={card.route || "/"}
-                                            className="text-lg font-semibold underline hover:text-blue-300"
-                                        >
+                                        <Link to="/app">
                                             <Button variant="secondary" className='bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-slate-300'>
                                                 <Eye className="h-5 w-5" />
                                                 Acessar Sistema
