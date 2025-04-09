@@ -34,7 +34,7 @@ export function Home() {
             title: "BUSCA DOE",
             description: "Sistema de Busca Avançado de Diários Oficiais do Estado do Pará",
             image: imgBuscaDoe,
-            externalLink: "https://cloud.pge.pa.gov.br/buscadoe",
+            externalLink: "http://buscadoe.pge.pa.gov.br/",
         },
         {
             title: "SUPORTE DTI",
