@@ -24,7 +24,7 @@ const newRoutes: RouteObject[] = [
   export const App = () => (
     <HelmetProvider>
       
-        <Helmet titleTemplate="INTRANET | %s" />
+        <Helmet titleTemplate="Sistemas | %s" />
         <Toaster richColors />
         <ToastContainer />
         <QueryClientProvider client={queryClient}>
