@@ -6,6 +6,7 @@ import imgBuscaDoe from "@/assets/busca.png";
 import imgSuporteDtigd from "@/assets/suporte.png";
 import imgNuvem from "@/assets/nuvem.png";
 import imgGdap from "@/assets/gdap.png";
+import imgPae from "@/assets/pae.svg";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -46,13 +47,19 @@ export function Home() {
             title: "NUVEM PGE",
             description: "Sistema de Armazenamento de Arquivos da Procuradoria-Geral do Estado do Pará",
             image: imgNuvem,
-            externalLink: "/nuvem/",
+            externalLink: "https://cloud.pge.pa.gov.br/",
         },
         {
             title: "GDAP",
             description: "Gratificação de Desempenho de Apoio à Procuradoria",
             image: imgGdap,
             externalLink: "http://10.96.0.26:8080/gdap/",
+        },
+        {
+            title: "PAE",
+            description: "Processo Administrativo Eletrônico",
+            image: imgPae,
+            externalLink: "https://www.sistemas.pa.gov.br/governodigital/public/main/index.xhtml",
         },
     ];
 
