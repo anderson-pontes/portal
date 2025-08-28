@@ -1,4 +1,4 @@
-import { createHashRouter, LoaderFunctionArgs } from "react-router-dom";
+import { createHashRouter, LoaderFunctionArgs, Navigate } from "react-router-dom";
 import { NotFound } from './src/pages/app/404';
 import { Home } from './src/pages/app/Home';
 import { AppLayout } from './src/pages/layout/app';
@@ -7,66 +7,69 @@ import HomePcta from '@/pages/app/Pcta';
 import FolderDetailsPage from '@/pages/app/FolderDetailsPage';
 import SubfolderDetailsPage from '@/pages/app/SubfolderDetailsPage';
 import ManageFolderPage from '@/pages/app/ManageFolderPage';
-import CreateItemPage from '@/pages/app/CreateItemPage'; // Importe a nova página
+import CreateItemPage from '@/pages/app/CreateItemPage';
+import LoginPage from '@/pages/auth/Sign-in';
+
+// Componente para proteger rotas
+function ProtectedRoute({ children }: { children: JSX.Element }) {
+  const token = localStorage.getItem("auth_token") || sessionStorage.getItem("auth_token");
+  if (!token) {
+    return <Navigate to="/" replace />; // Redireciona para login se não estiver autenticado
+  }
+  return children;
+}
 
 export const Router = createHashRouter([
+  // Login (página pública)
   {
-    path: '/',
-    element: <AppLayout />,
+    path: "/",
+    element: <LoginPage />,
+  },
+
+  // Rotas protegidas
+  {
+    path: "/app",
+    element: (
+      <ProtectedRoute>
+        <AppLayout />
+      </ProtectedRoute>
+    ),
     errorElement: <NotFound />,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/bancodeteses', element: <HomeBancoPareceres /> },
-      { path: '/pcta', element: <HomePcta /> },
-      
-      // Rota para visualizar pastas (FolderDetailsPage)
+      { path: "bancodeteses", element: <HomeBancoPareceres /> },
+      { path: "pcta", element: <HomePcta /> },
+      { path: "home", element: <Home /> },
       {
-        path: '/folder/:folderId',
+        path: "folder/:folderId",
         element: <FolderDetailsPage />,
-        loader: ({ params }: LoaderFunctionArgs) => {
-          const folderId = params.folderId;
-          return { folderId }; // Retornando folderId para o componente
-        },
+        loader: ({ params }: LoaderFunctionArgs) => ({ folderId: params.folderId }),
       },
-
-      // Rota para visualizar subpastas (SubfolderDetailsPage)
       {
-        path: '/folder/:folderId/:subfolderId',
+        path: "folder/:folderId/:subfolderId",
         element: <SubfolderDetailsPage />,
-        loader: ({ params }: LoaderFunctionArgs) => {
-          const { folderId, subfolderId } = params;
-          return { folderId, subfolderId }; // Retornando folderId e subfolderId para o componente
-        },
+        loader: ({ params }: LoaderFunctionArgs) => ({
+          folderId: params.folderId,
+          subfolderId: params.subfolderId,
+        }),
       },
-
-      // Rota para visualizar subpastas aninhadas (SubfolderDetailsPage)
       {
-        path: '/folder/:folderId/:subfolderId/:subsubfolderId',
+        path: "folder/:folderId/:subfolderId/:subsubfolderId",
         element: <SubfolderDetailsPage />,
-        loader: ({ params }: LoaderFunctionArgs) => {
-          const { folderId, subfolderId, subsubfolderId } = params;
-          return { folderId, subfolderId, subsubfolderId }; // Retornando folderId, subfolderId e subsubfolderId para o componente
-        },
+        loader: ({ params }: LoaderFunctionArgs) => ({
+          folderId: params.folderId,
+          subfolderId: params.subfolderId,
+          subsubfolderId: params.subsubfolderId,
+        }),
       },
-
-      // Rota para o gerenciamento de pastas (ManageFolderPage)
       {
-        path: '/folder/:folderId/manage',
+        path: "folder/:folderId/manage",
         element: <ManageFolderPage />,
-        loader: ({ params }: LoaderFunctionArgs) => {
-          const folderId = params.folderId;
-          return { folderId }; // Retornando folderId para o componente de gerenciamento
-        },
+        loader: ({ params }: LoaderFunctionArgs) => ({ folderId: params.folderId }),
       },
-
-      // Rota para criar novos itens (CreateItemPage)
       {
-        path: '/folder/:folderId/create',
+        path: "folder/:folderId/create",
         element: <CreateItemPage />,
-        loader: ({ params }: LoaderFunctionArgs) => {
-          const folderId = params.folderId;
-          return { folderId }; // Retornando folderId para o componente de criação
-        },
+        loader: ({ params }: LoaderFunctionArgs) => ({ folderId: params.folderId }),
       },
     ],
   },
