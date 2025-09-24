@@ -30,10 +30,10 @@ export function Header() {
                         </div>
                         <div className="flex flex-col">
                             <span className="gradient-text text-2xl font-black tracking-tight">
-                                PORTAL PGE
+                                SISTEMAS PGE
                             </span>
                             <span className="text-xs text-slate-500 font-medium -mt-1">
-                                Procuradoria-Geral do Estado
+                                Procuradoria-Geral do Estado do Pará
                             </span>
                         </div>
                     </div>

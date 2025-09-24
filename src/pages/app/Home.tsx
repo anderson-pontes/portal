@@ -44,7 +44,7 @@ export function Home() {
             externalLink: "http://suportedti.pge.pa.gov.br/",
         },
         {
-            title: "NUVEM PGE",
+            title: "CLOUD PGE",
             description: "Sistema de Armazenamento de Arquivos da Procuradoria-Geral do Estado do Pará",
             image: imgNuvem,
             externalLink: "https://cloud.pge.pa.gov.br/",
@@ -71,7 +71,7 @@ export function Home() {
                     {/* Header Section */}
                     <div className="text-center mb-16 animate-slideIn">
                         <h1 className="text-5xl md:text-6xl font-extrabold gradient-text mb-6 animate-scaleIn">
-                            Portal PGE-PA
+                            Sistemas PGE-PA
                         </h1>
                         <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed animate-fadeIn">
                             Sistemas da Procuradoria-Geral do Estado do Pará
