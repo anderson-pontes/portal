@@ -218,17 +218,6 @@ Este projeto é propriedade da **Procuradoria-Geral do Estado do Pará** e está
 - **Design**: Equipe DTIGD  
 - **Infraestrutura**: Equipe DTIGD
 
----
-
-## 📞 Suporte
-
-Para suporte técnico ou dúvidas sobre o sistema:
-
-- 🌐 **Portal**: [Portal PGE-PA](http://portal.pge.pa.gov.br)
-- 📧 **Email**: suporte@pge.pa.gov.br
-- 🎫 **Sistema de Suporte**: [Suporte DTI](http://suportedti.pge.pa.gov.br/)
-
----
 
 <div align="center">
   <p><strong>Desenvolvido com ❤️ pela DTIGD - PGE-PA</strong></p>
