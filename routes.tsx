@@ -1,41 +1,22 @@
-import { createHashRouter, LoaderFunctionArgs, Navigate } from "react-router-dom";
+import { createHashRouter, LoaderFunctionArgs } from "react-router-dom";
 import { NotFound } from './src/pages/app/404';
 import { Home } from './src/pages/app/Home';
 import { AppLayout } from './src/pages/layout/app';
-import { HomeBancoPareceres } from '@/pages/app/HomeBancoPareceres';
-import HomePcta from '@/pages/app/Pcta';
-import FolderDetailsPage from '@/pages/app/FolderDetailsPage';
-import SubfolderDetailsPage from '@/pages/app/SubfolderDetailsPage';
-import ManageFolderPage from '@/pages/app/ManageFolderPage';
-import CreateItemPage from '@/pages/app/CreateItemPage';
-import LoginPage from '@/pages/auth/Sign-in';
-
-// Componente para proteger rotas
-function ProtectedRoute({ children }: { children: JSX.Element }) {
-  const token = localStorage.getItem("auth_token") || sessionStorage.getItem("auth_token");
-  if (!token) {
-    return <Navigate to="/" replace />; // Redireciona para login se não estiver autenticado
-  }
-  return children;
-}
+import { HomeBancoPareceres } from './src/pages/app/HomeBancoPareceres';
+import HomePcta from './src/pages/app/Pcta';
+import FolderDetailsPage from './src/pages/app/FolderDetailsPage';
+import SubfolderDetailsPage from './src/pages/app/SubfolderDetailsPage';
+import ManageFolderPage from './src/pages/app/ManageFolderPage';
+import CreateItemPage from './src/pages/app/CreateItemPage';
 
 export const Router = createHashRouter([
-  // Login (página pública)
+  // Todas as rotas são agora públicas
   {
     path: "/",
-    element: <LoginPage />,
-  },
-
-  // Rotas protegidas
-  {
-    path: "/app",
-    element: (
-      <ProtectedRoute>
-        <AppLayout />
-      </ProtectedRoute>
-    ),
+    element: <AppLayout />,
     errorElement: <NotFound />,
     children: [
+      { path: "", element: <Home /> }, // Home page na rota raiz
       { path: "bancodeteses", element: <HomeBancoPareceres /> },
       { path: "pcta", element: <HomePcta /> },
       { path: "home", element: <Home /> },
