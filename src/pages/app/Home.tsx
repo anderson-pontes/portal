@@ -14,11 +14,12 @@ import { Eye } from 'lucide-react';
 export function Home() {
     const flashcards = [
         {
-            title: "e-CONSULTA",
-            description: "Sistema de Consulta de Processos do e-PGE",
-            image: imgBancoPareceres,
-            externalLink: "http://10.96.0.54:4000",
+            title: "SIGESCON",
+            description: "Sistema de Gestão de Contratos",
+            image: imgSigescon,
+            externalLink: "http://sigescon.pge.pa.gov.br/",
         },
+        
         {
             title: "SIDA",
             description: "Sistema de Inteligência da Procuradoria da Dívida Ativa",
@@ -56,11 +57,12 @@ export function Home() {
             externalLink: "http://10.96.0.26:8080/gdap/",
         },
         {
-            title: "SIGESCON",
-            description: "Sistema de Gestão de Contratos",
-            image: imgSigescon,
-            externalLink: "http://sigescon.pge.pa.gov.br/",
+            title: "e-CONSULTA",
+            description: "Sistema de Consulta de Processos do e-PGE",
+            image: imgBancoPareceres,
+            externalLink: "http://10.96.0.54:4000",
         },
+        
     ];
 
     return (
