@@ -7,6 +7,7 @@ import imgSuporteDtigd from "@/assets/suporte.png";
 import imgNuvem from "@/assets/nuvem.png";
 import imgGdap from "@/assets/gdap.png";
 import imgSigescon from "@/assets/contrato.png";
+import imgEadEsap from "@/assets/ead-esap.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -54,13 +55,19 @@ export function Home() {
             title: "GDAP",
             description: "Gratificação de Desempenho de Apoio à Procuradoria",
             image: imgGdap,
-            externalLink: "http://10.96.0.26:8080/gdap/",
+            externalLink: "http://10.96.0.51/",
         },
         {
             title: "e-CONSULTA",
             description: "Sistema de Consulta de Processos do e-PGE",
             image: imgBancoPareceres,
             externalLink: "http://10.96.0.54:4000",
+        },
+        {
+            title: "EAD ESAP",
+            description: "Plataforma de Ensino a Distância da ESAP",
+            image: imgEadEsap,
+            externalLink: "https://eadesap.pge.pa.gov.br",
         },
         
     ];
