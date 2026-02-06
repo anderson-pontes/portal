@@ -16,11 +16,24 @@ const newRoutes: RouteObject[] = [
     { path: "/pesquisaintegrada/results", element: <ResultsPage /> },
   ];
   
+  // Flags de futuro do React Router v7 (evita warnings e prepara migração)
+  const futureFlags = {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true,
+    v7_fetcherPersist: true,
+    v7_normalizeFormMethod: true,
+    v7_partialHydration: true,
+    v7_skipActionErrorRevalidation: true,
+  };
+
   // Combinando as rotas do AdminRouter com as novas rotas
-  const combinedRouter = createHashRouter([
-    ...Router.routes,  // Supondo que AdminRouter já possui um array de rotas
-    ...newRoutes,  // Adiciona as novas rotas definidas acima
-  ]);
+  const combinedRouter = createHashRouter(
+    [
+      ...Router.routes,
+      ...newRoutes,
+    ],
+    { future: futureFlags }
+  );
   export const App = () => (
     <HelmetProvider>
       

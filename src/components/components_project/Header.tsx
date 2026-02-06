@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Menu } from "lucide-react";
+import { BookOpen, Home, Menu } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { NavLink } from "react-router-dom";
 import Logo from "@/assets/logo.svg";
@@ -57,6 +57,12 @@ export function Header() {
                         <div className="flex flex-row justify-center items-center gap-2 font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 px-4 py-2 rounded-xl hover:bg-white/20 hover:scale-105">
                             <Home className="h-5 w-5" />
                             Home
+                        </div>
+                    </NavLink>
+                    <NavLink to="/manuais" onClick={closeMenu}>
+                        <div className="flex flex-row justify-center items-center gap-2 font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 px-4 py-2 rounded-xl hover:bg-white/20 hover:scale-105">
+                            <BookOpen className="h-5 w-5" />
+                            Manuais
                         </div>
                     </NavLink>
 

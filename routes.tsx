@@ -8,18 +8,29 @@ import FolderDetailsPage from './src/pages/app/FolderDetailsPage';
 import SubfolderDetailsPage from './src/pages/app/SubfolderDetailsPage';
 import ManageFolderPage from './src/pages/app/ManageFolderPage';
 import CreateItemPage from './src/pages/app/CreateItemPage';
+import ManuaisPage from './src/pages/app/ManuaisPage';
 
-export const Router = createHashRouter([
-  // Todas as rotas são agora públicas
-  {
-    path: "/",
-    element: <AppLayout />,
-    errorElement: <NotFound />,
-    children: [
+const futureFlags = {
+  v7_startTransition: true,
+  v7_relativeSplatPath: true,
+  v7_fetcherPersist: true,
+  v7_normalizeFormMethod: true,
+  v7_partialHydration: true,
+  v7_skipActionErrorRevalidation: true,
+};
+
+export const Router = createHashRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <NotFound />,
+      children: [
       { path: "", element: <Home /> }, // Home page na rota raiz
       { path: "bancodeteses", element: <HomeBancoPareceres /> },
       { path: "pcta", element: <HomePcta /> },
       { path: "home", element: <Home /> },
+      { path: "manuais", element: <ManuaisPage /> },
       {
         path: "folder/:folderId",
         element: <FolderDetailsPage />,
@@ -53,5 +64,7 @@ export const Router = createHashRouter([
         loader: ({ params }: LoaderFunctionArgs) => ({ folderId: params.folderId }),
       },
     ],
-  },
-]);
+    },
+  ],
+  { future: futureFlags }
+);
