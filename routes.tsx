@@ -8,6 +8,9 @@ import FolderDetailsPage from './src/pages/app/FolderDetailsPage';
 import SubfolderDetailsPage from './src/pages/app/SubfolderDetailsPage';
 import ManageFolderPage from './src/pages/app/ManageFolderPage';
 import CreateItemPage from './src/pages/app/CreateItemPage';
+import Avisos from "@/pages/app/Avisos";
+import Manuais from "@/pages/app/Manuais";
+import ManualViewer from "@/components/components_project/ManualViewer";
 
 export const Router = createHashRouter([
   // Todas as rotas são agora públicas
@@ -17,6 +20,9 @@ export const Router = createHashRouter([
     errorElement: <NotFound />,
     children: [
       { path: "", element: <Home /> }, // Home page na rota raiz
+      { path: "avisos", element: <Avisos /> }, 
+      { path: "manuais", element: <Manuais /> }, 
+      { path: "manuais/:id", element: <ManualViewer /> }, 
       { path: "bancodeteses", element: <HomeBancoPareceres /> },
       { path: "pcta", element: <HomePcta /> },
       { path: "home", element: <Home /> },
