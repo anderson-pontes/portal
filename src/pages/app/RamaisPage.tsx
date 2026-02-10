@@ -226,52 +226,54 @@ export default function RamaisPage() {
                 </p>
               </div>
             ) : (
-              <div className="max-h-[480px] overflow-auto rounded-2xl border border-slate-100 bg-white/80 shadow-inner">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-slate-50/80">
-                      <TableHead className="w-[15%] text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Local
-                      </TableHead>
-                      <TableHead className="w-[35%] text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Lotação
-                      </TableHead>
-                      <TableHead className="w-[35%] text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Servidor
-                      </TableHead>
-                      <TableHead className="w-[15%] text-xs font-semibold uppercase tracking-wide text-slate-500">
-                        Telefone
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {filteredRamais.map((ramal, index) => (
-                      <TableRow
-                        key={`${ramal.local}-${ramal.lotacao}-${ramal.servidor}-${ramal.telefone}-${index}`}
-                        className="hover:bg-slate-50"
-                      >
-                        <TableCell className="align-middle text-sm font-medium text-slate-800">
-                          {ramal.local}
-                        </TableCell>
-                        <TableCell
-                          className="max-w-xs align-middle text-sm text-slate-700"
-                          title={ramal.lotacao}
-                        >
-                          <span className="line-clamp-2">{ramal.lotacao}</span>
-                        </TableCell>
-                        <TableCell
-                          className="max-w-xs align-middle text-sm text-slate-800"
-                          title={ramal.servidor}
-                        >
-                          <span className="line-clamp-2">{ramal.servidor}</span>
-                        </TableCell>
-                        <TableCell className="align-middle text-sm font-semibold text-slate-900">
-                          {ramal.telefone}
-                        </TableCell>
+              <div className="w-full max-h-[480px] overflow-x-auto overflow-y-auto rounded-2xl border border-slate-100 bg-white/80 shadow-inner">
+                <div className="min-w-[520px] md:min-w-full">
+                  <Table>
+                    <TableHeader>
+                      <TableRow className="bg-slate-50/80">
+                        <TableHead className="w-[18%] text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                          Local
+                        </TableHead>
+                        <TableHead className="w-[37%] text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                          Lotação
+                        </TableHead>
+                        <TableHead className="w-[30%] text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                          Servidor
+                        </TableHead>
+                        <TableHead className="w-[15%] whitespace-nowrap text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                          Telefone
+                        </TableHead>
                       </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                    </TableHeader>
+                    <TableBody>
+                      {filteredRamais.map((ramal, index) => (
+                        <TableRow
+                          key={`${ramal.local}-${ramal.lotacao}-${ramal.servidor}-${ramal.telefone}-${index}`}
+                          className="hover:bg-slate-50"
+                        >
+                          <TableCell className="align-middle text-xs md:text-sm font-medium text-slate-800">
+                            {ramal.local}
+                          </TableCell>
+                          <TableCell
+                            className="max-w-xs align-middle text-xs md:text-sm text-slate-700"
+                            title={ramal.lotacao}
+                          >
+                            <span className="line-clamp-2">{ramal.lotacao}</span>
+                          </TableCell>
+                          <TableCell
+                            className="max-w-xs align-middle text-xs md:text-sm text-slate-800"
+                            title={ramal.servidor}
+                          >
+                            <span className="line-clamp-2">{ramal.servidor}</span>
+                          </TableCell>
+                          <TableCell className="whitespace-nowrap align-middle text-xs md:text-sm font-semibold text-slate-900">
+                            {ramal.telefone}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
               </div>
             )}
           </CardContent>
