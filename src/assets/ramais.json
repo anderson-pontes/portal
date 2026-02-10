@@ -1,0 +1,1409 @@
+[
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"ASSESSORIA DE COMUNICAÇÃO",
+        "servidor":"Bárbara",
+        "telefone":"3344-2785"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"ASSESSORIA DE GABINETE",
+        "servidor":"Isabela",
+        "telefone":"3344-2785"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"ASSESSORIA DE GABINETE",
+        "servidor":"Leonardo",
+        "telefone":"3344-2734"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"ASSESSORIA DE GABINETE",
+        "servidor":"Myrza",
+        "telefone":"3344-2785"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"ASSESSORIA DE GABINETE",
+        "servidor":"Rafael Rolo",
+        "telefone":"3344-2734"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Ana Amélia",
+        "telefone":"3344-2704"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Camila",
+        "telefone":"3344-2729"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Flávia",
+        "telefone":"3344-2704"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Gustavo Monteiro",
+        "telefone":"3344-2715"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Karen",
+        "telefone":"3344-2704"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"ATOS DO GOVERNADOR",
+        "servidor":"Raquel",
+        "telefone":"3344-2729"
+    },
+    {
+        "local":"SETORIAL DE BRASÍLIA",
+        "lotacao":"Brasília",
+        "servidor":"Daniella Salgado",
+        "telefone":"(061) 2104-2200"
+    },
+    {
+        "local":"SETORIAL DE BRASÍLIA",
+        "lotacao":"Brasília",
+        "servidor":"Geral",
+        "telefone":"(061) 3223-8000"
+    },
+    {
+        "local":"SETORIAL DE BRASÍLIA",
+        "lotacao":"Brasília",
+        "servidor":"Henrique Mouta",
+        "telefone":"(061) 2104-2205"
+    },
+    {
+        "local":"SETORIAL DE BRASÍLIA",
+        "lotacao":"Brasília",
+        "servidor":"Saboia",
+        "telefone":"(061) 2104-2205"
+    },
+    {
+        "local":"SETORIAL DE BRASÍLIA",
+        "lotacao":"Brasília",
+        "servidor":"Viviane",
+        "telefone":"(061) 2104-2205"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"C. INTERNO",
+        "servidor":"Danielle",
+        "telefone":"3344-2716"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"C. INTERNO",
+        "servidor":"Edicleia",
+        "telefone":"3344-2716"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"C. INTERNO",
+        "servidor":"Rosane",
+        "telefone":"3344-2716"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CAMPGE",
+        "servidor":"Ayda",
+        "telefone":"3344-2792"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CAMPGE",
+        "servidor":"Flávio Mansur",
+        "telefone":"3344-2792"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CAMPGE",
+        "servidor":"Rosângela Monteiro",
+        "telefone":"3344-2792"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Beth",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Carla",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Conceição",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Cristina Magrin",
+        "telefone":"3344-2708"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Edna",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Fátima",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Lícia",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Liene",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Luana",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Maurício",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Mauro",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Oberdan",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Robson",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Rogério",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Rosângela",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Rosemere",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Salomão",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CECAD",
+        "servidor":"Valentin",
+        "telefone":"3344-2702"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CENTRAL DE MANDADOS",
+        "servidor":"Ana Rita",
+        "telefone":"3344-2782"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CENTRAL DE MANDADOS",
+        "servidor":"Cíntia",
+        "telefone":"3344-2782"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CENTRAL DE MANDADOS",
+        "servidor":"Cláudia Batista",
+        "telefone":"3344-2782"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CENTRAL DE MANDADOS",
+        "servidor":"Zilma",
+        "telefone":"3344-2782"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CENTRO DE ESTUDOS",
+        "servidor":"Alessandra",
+        "telefone":"3344-2771"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"CENTRO DE ESTUDOS",
+        "servidor":"Rafael Rolo",
+        "telefone":"3344-2776"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Agnaldo",
+        "telefone":"3344-2798"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Hirval",
+        "telefone":"3344-2798"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Mariléa",
+        "telefone":"3344-2798"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Regina",
+        "telefone":"3344-2798"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Rose",
+        "telefone":"3344-2786"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CHEFIA DE GABINETE        ",
+        "servidor":"Tânia",
+        "telefone":"3344-2742"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Barata",
+        "telefone":"3344-2724"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Bruna",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Carolina",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Célia",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Fabrício",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Geisedete",
+        "telefone":"3344-2724"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Helena",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Katiane",
+        "telefone":"3344-2791"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Leandro",
+        "telefone":"3344-2725"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Lourdes",
+        "telefone":"3344-2724"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Patrícia",
+        "telefone":"3344-2724"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"COORD. FINANCEIRA",
+        "servidor":"Sauma",
+        "telefone":"3344-2724"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CORREGEDORIA",
+        "servidor":"Michelle",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"CORREGEDORIA",
+        "servidor":"Roland Massoud",
+        "telefone":"3344-2705"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"DAF",
+        "servidor":"Clara",
+        "telefone":"3344-2706"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"DAF",
+        "servidor":"Jefferson",
+        "telefone":"3344-2711"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"ESTACIONAMENTO",
+        "servidor":"Alexandre",
+        "telefone":"3344-2733"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"ESTACIONAMENTO",
+        "servidor":"Justino",
+        "telefone":"3344-2733"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"ESTACIONAMENTO",
+        "servidor":"Maxxsael",
+        "telefone":"3344-2733"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"ESTACIONAMENTO",
+        "servidor":"Paulo Roberto",
+        "telefone":"3344-2733"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"ESTACIONAMENTO",
+        "servidor":"PM's",
+        "telefone":"3344-2772"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"G. TRANSPORTE E COMUNIC",
+        "servidor":"Altair",
+        "telefone":"3344-2775"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"G. TRANSPORTE E COMUNIC",
+        "servidor":"Ivo",
+        "telefone":"3344-2775"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"G. TRANSPORTE E COMUNIC",
+        "servidor":"Odalea",
+        "telefone":"3344-2775"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"G. TRANSPORTE E COMUNIC",
+        "servidor":"Reinaldo",
+        "telefone":"3344-2775"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GER. CONT. E LICITAÇÃO",
+        "servidor":"Brunna",
+        "telefone":"3344-2707"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GER. CONT. E LICITAÇÃO",
+        "servidor":"Cristhiane",
+        "telefone":"3344-2707"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GER. CONT. E LICITAÇÃO",
+        "servidor":"Roberta",
+        "telefone":"3344-2707"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GER. CONT. E LICITAÇÃO",
+        "servidor":"Rubens",
+        "telefone":"3344-2707"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Antônia Marinho",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Débora",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Florentino",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Gilson",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Márcio",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Natanael",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Nelson",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Paulo Rocha",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GESTÃO DOCUMENTAL",
+        "servidor":"Rita",
+        "telefone":"3344-2757"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"GMAT",
+        "servidor":"Arlen",
+        "telefone":"3342-2769"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"GMAT",
+        "servidor":"Claudia Bouth",
+        "telefone":"3342-2769"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"GMAT",
+        "servidor":"Fernando Saraiva",
+        "telefone":"3344-2793"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"GMAT",
+        "servidor":"Wagner",
+        "telefone":"3342-2769"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GRH",
+        "servidor":"Adriana",
+        "telefone":"3344-2761"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GRH",
+        "servidor":"Ediane",
+        "telefone":"3344-2761"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GRH",
+        "servidor":"Edson",
+        "telefone":"3344-2720"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GRH",
+        "servidor":"Élida",
+        "telefone":"3344-2720"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"GRH",
+        "servidor":"Marildo",
+        "telefone":"3344-2714"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GSERV",
+        "servidor":"Amadeu",
+        "telefone":"3344-2709"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GSERV",
+        "servidor":"Ana Cláudia Mallet",
+        "telefone":"3344-2709"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GSERV",
+        "servidor":"Diogo",
+        "telefone":"3344-2737"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GSERV",
+        "servidor":"Éder",
+        "telefone":"3344-2709"
+    },
+    {
+        "local":"PGE-SEDE: Av Conselheiro Furtado nº 616",
+        "lotacao":"GSERV",
+        "servidor":"Euclides",
+        "telefone":"3344-2709"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - DIRETORIA",
+        "servidor":"Fábio Cavalcante",
+        "telefone":"3344-2739"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Clayton Muto",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"DTIGD - COORDENAÇÃO",
+        "servidor":"Humberto Maia",
+        "telefone":"3344-2796"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Leon James",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Roberto Damasceno",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"DTIGD - GERÊNCIA",
+        "servidor":"Roberto Santos",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Rogério Cordeiro",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Edson",
+        "telefone":"(094) 2101-6502"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Elisa",
+        "telefone":"(094) 2101-6500"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Erotides",
+        "telefone":"(094) 2101-6501"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Jessica",
+        "telefone":"(094) 2101-6502"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Juliana",
+        "telefone":"(094) 2101-6501"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Luiz Augusto",
+        "telefone":"(094) 2101-6501"
+    },
+    {
+        "local":"REGIONAL MARABÁ",
+        "lotacao":"Marabá",
+        "servidor":"Selma",
+        "telefone":"(094) 2101-6500"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"NUPLAN",
+        "servidor":"Iêda",
+        "telefone":"3344-2735"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PCTA – 3",
+        "servidor":"Fabiana",
+        "telefone":"3344-2749"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PCTA – 3",
+        "servidor":"Susanne",
+        "telefone":"3344-2787"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PGA – Adm.",
+        "servidor":"Adriana Franco",
+        "telefone":"3344-2788"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PGA – Cont.",
+        "servidor":"Ana Carolina Peracchi",
+        "telefone":"3344-2790"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PGE",
+        "servidor":"Ricardo Sefer",
+        "telefone":"3344-2789"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Bianca",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Chagas",
+        "telefone":"3344-2795"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Christiane",
+        "telefone":"3344-2795"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Eduardo",
+        "telefone":"3344-2795"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Fábio",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Fernando",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Hubertus",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Márcia",
+        "telefone":"3344-2795"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Marcus Vinicius",
+        "telefone":"3344-2795"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORES",
+        "servidor":"Victor",
+        "telefone":"3344-2794"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Alcir",
+        "telefone":"3344-2780"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Glaucia",
+        "telefone":"3344-2741"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Iana",
+        "telefone":"3344-2719"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"João",
+        "telefone":"3344-2703"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Maria Elisa",
+        "telefone":"3344-2784"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Renata",
+        "telefone":"3344-2750"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Salin",
+        "telefone":"3344-2780"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CÍVEL, TRABALHISTA E ADMINISTRATIVA – PCTA",
+        "servidor":"Socorro",
+        "telefone":"3344-2759"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CONSULTIVA – PCON",
+        "servidor":"Darilson",
+        "telefone":"3344-2731"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CONSULTIVA – PCON",
+        "servidor":"Katia",
+        "telefone":"3344-2731"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA CONSULTIVA – PCON",
+        "servidor":"Robina",
+        "telefone":"3344-2783"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Ana Paula",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Arimatéia",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Bárbara",
+        "telefone":"3344-2712"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Bianca",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Bruno",
+        "telefone":"3344-2797"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Cintia",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Cláudia Moreira",
+        "telefone":"3344-2762"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Cláudia Vidigal",
+        "telefone":"3344-2762"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Débora",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Fabrícia",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Gilmara",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Junes",
+        "telefone":"3344-2797"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Kerly",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Lauro",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Nilda",
+        "telefone":"3344-2723"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Paula",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Pedro",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Rodolfo",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Talita",
+        "telefone":"3344-2753"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA DE PRECATÓRIOS E RPV'S",
+        "servidor":"Vera",
+        "telefone":"3344-2797"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Adelina",
+        "telefone":"3344-2774"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Antônia Oliva",
+        "telefone":"3344-2726"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Ari",
+        "telefone":"3344-2726"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Brenda",
+        "telefone":"3344-2718"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Camila",
+        "telefone":"3344-2773"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Fabiana",
+        "telefone":"3344-2774"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Fernanda",
+        "telefone":"3344-2726"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Flávio",
+        "telefone":"3344-2718"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Jair Marocco",
+        "telefone":"3344-2754"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Janice",
+        "telefone":"3344-2726"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Marcela",
+        "telefone":"3344-2766"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Paulão",
+        "telefone":"3344-2768"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Roberta Dória",
+        "telefone":"3344-2767"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Shyrlei",
+        "telefone":"3344-2774"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Tereza",
+        "telefone":"3344-2710"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"PROCURADORIA FUNDIÁRIA E AMBIENTAL - PFAM",
+        "servidor":"Yasmin",
+        "telefone":"3344-2774"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"PROTOCOLO    ",
+        "servidor":"Anderson",
+        "telefone":"3344-2746"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"PROTOCOLO    ",
+        "servidor":"Conceição",
+        "telefone":"3344-2746"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"PROTOCOLO    ",
+        "servidor":"Fátima",
+        "telefone":"3344-2746"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"PROTOCOLO    ",
+        "servidor":"Sérgio",
+        "telefone":"3344-2746"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PUBLICS E DILIGS",
+        "servidor":"Jaciara",
+        "telefone":"3344-2799"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PUBLICS E DILIGS",
+        "servidor":"Lucyanna",
+        "telefone":"3344-2799"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"PUBLICS E DILIGS",
+        "servidor":"Roseli",
+        "telefone":"3344-2799"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (TÉRREO)",
+        "lotacao":"RECEPÇÃO ",
+        "servidor":"Paulo Soeiro",
+        "telefone":"3344-2781"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Gisleno",
+        "telefone":"(093) 2101-9232"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Laurimarcio",
+        "telefone":"(093) 2101-9204"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Maíra",
+        "telefone":"(093) 2101-9203"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Pablo",
+        "telefone":"(093) 2101-9232"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Rodrigo",
+        "telefone":"(093) 2101-9205"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Vanda",
+        "telefone":"(093) 2101-9200"
+    },
+    {
+        "local":"REGIONAL SANTARÉM",
+        "lotacao":"Santarém",
+        "servidor":"Wendel",
+        "telefone":"(093) 2101-9209"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"Secret. DAF",
+        "servidor":"David",
+        "telefone":"3344-2728"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"Secret. DAF",
+        "servidor":"Sueny",
+        "telefone":"3344-2728"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRET. PROFISCO ",
+        "servidor":"Ada",
+        "telefone":"3344-2721"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRET. PROFISCO ",
+        "servidor":"Gabriela Silveira",
+        "telefone":"3344-2721"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRET. PROFISCO ",
+        "servidor":"Lorena",
+        "telefone":"3344-2721"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRET. PROFISCO ",
+        "servidor":"Regina",
+        "telefone":"3344-2721"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRET. PROFISCO ",
+        "servidor":"Vera",
+        "telefone":"3344-2721"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Adriana Bessa",
+        "telefone":"3344-2777"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Alda",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Amélia",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Ana",
+        "telefone":"3344-2730"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Edilene",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Fábio",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Fernanda",
+        "telefone":"3344-2730"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Gabriela Rosa",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Graça",
+        "telefone":"3344-2730"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Guilmarlene",
+        "telefone":"3344-2730"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Inês",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Jean",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Rosa",
+        "telefone":"3344-2727"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"SECRETARIA DIV. ATIVA",
+        "servidor":"Sheila",
+        "telefone":"3344-2717"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":null,
+        "servidor":"Zuri",
+        "telefone":"3344-2730"
+    },
+    {
+        "local":"PRÉDIO PRINCIPAL (SUPERIOR)",
+        "lotacao":"SERVIÇO SOCIAL",
+        "servidor":"Rosicleide",
+        "telefone":"3344-2751"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Anderson Pontes",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Amanda Souza",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Andrea Machado",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Wanderson Lopes",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Edson Lucas",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Josué Franco",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Mário Oliveria",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"José Filho",
+        "telefone":"3344-2764"
+    },
+
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Othon Sousa",
+        "telefone":"3344-2764"
+    },
+
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Edson Lamarão",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Daniel Santos",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Alessandro Silva",
+        "telefone":"3344-2763"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Braitner Costa",
+        "telefone":"3344-2764"
+    },
+
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SUPORTE",
+        "servidor":"Guilherme Santos",
+        "telefone":"3344-2764"
+    },
+    {
+        "local":"PGE-SEDE: Tv. Padre Eutíquio nº 1508",
+        "lotacao":"DTIGD - SISTEMAS",
+        "servidor":"Nicolas Sousa",
+        "telefone":"3344-2763"
+    }
+]

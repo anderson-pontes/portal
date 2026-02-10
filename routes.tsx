@@ -4,6 +4,7 @@ import { Home } from './src/pages/app/Home';
 import { AppLayout } from './src/pages/layout/app';
 import { HomeBancoPareceres } from './src/pages/app/HomeBancoPareceres';
 import HomePcta from './src/pages/app/Pcta';
+import RamaisPage from './src/pages/app/RamaisPage';
 import FolderDetailsPage from './src/pages/app/FolderDetailsPage';
 import SubfolderDetailsPage from './src/pages/app/SubfolderDetailsPage';
 import ManageFolderPage from './src/pages/app/ManageFolderPage';
@@ -31,6 +32,7 @@ export const Router = createHashRouter(
       { path: "pcta", element: <HomePcta /> },
       { path: "home", element: <Home /> },
       { path: "manuais", element: <ManuaisPage /> },
+      { path: "ramais", element: <RamaisPage /> },
       {
         path: "folder/:folderId",
         element: <FolderDetailsPage />,
