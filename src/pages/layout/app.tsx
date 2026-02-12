@@ -6,7 +6,7 @@ export function AppLayout() {
   const { pathname } = useLocation();
   
   // Defina um conjunto de rotas que devem ficar sem padding
-  const fullscreenPages = ["/camarasemfoco", "/panoramamunicipal", "/acompanhamentodeprodutividade"];
+  const fullscreenPages = ["/camarasemfoco", "/panoramamunicipal", "/acompanhamentodeprodutividade", "/avisos"];
   const isFullscreenPage = fullscreenPages.includes(pathname);
 
   return (

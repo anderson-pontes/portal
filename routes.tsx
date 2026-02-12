@@ -10,6 +10,7 @@ import SubfolderDetailsPage from './src/pages/app/SubfolderDetailsPage';
 import ManageFolderPage from './src/pages/app/ManageFolderPage';
 import CreateItemPage from './src/pages/app/CreateItemPage';
 import ManuaisPage from './src/pages/app/ManuaisPage';
+import AvisosPage from './src/pages/app/AvisosPage';
 
 const futureFlags = {
   v7_startTransition: true,
@@ -33,6 +34,7 @@ export const Router = createHashRouter(
       { path: "home", element: <Home /> },
       { path: "manuais", element: <ManuaisPage /> },
       { path: "ramais", element: <RamaisPage /> },
+      { path: "avisos", element: <AvisosPage /> },
       {
         path: "folder/:folderId",
         element: <FolderDetailsPage />,

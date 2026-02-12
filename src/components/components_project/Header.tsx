@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOpen, Home, Menu, Phone } from "lucide-react";
+import { BookOpen, Home, Menu, Megaphone, Phone } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { NavLink } from "react-router-dom";
 import Logo from "@/assets/logo.svg";
@@ -71,7 +71,12 @@ export function Header() {
                             Manuais
                         </div>
                     </NavLink>
-                   
+                    <NavLink to="/avisos" onClick={closeMenu}>
+                        <div className="flex flex-row justify-center items-center gap-2 font-semibold text-slate-700 hover:text-blue-600 transition-all duration-300 px-4 py-2 rounded-xl hover:bg-white/20 hover:scale-105">
+                            <Megaphone className="h-5 w-5" />
+                            Avisos
+                        </div>
+                    </NavLink>
 
                 </nav>
             </div>
