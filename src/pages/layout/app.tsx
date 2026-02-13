@@ -1,12 +1,17 @@
 import { Header } from "@/components/components_project/Header";
 import { Outlet, useLocation } from "react-router-dom";
-import './scrollbar.css'
+import "./scrollbar.css";
 
 export function AppLayout() {
   const { pathname } = useLocation();
-  
+
   // Defina um conjunto de rotas que devem ficar sem padding
-  const fullscreenPages = ["/camarasemfoco", "/panoramamunicipal", "/acompanhamentodeprodutividade", "/avisos"];
+  const fullscreenPages = [
+    "/camarasemfoco",
+    "/panoramamunicipal",
+    "/acompanhamentodeprodutividade",
+    "/avisos",
+  ];
   const isFullscreenPage = fullscreenPages.includes(pathname);
 
   return (
@@ -21,30 +26,46 @@ export function AppLayout() {
 
       {/* Geometric patterns */}
       <div className="absolute inset-0 opacity-5">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
           <defs>
-            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5"/>
+            <pattern
+              id="grid"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 10 0 L 0 0 0 10"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="0.5"
+              />
             </pattern>
           </defs>
           <rect width="100" height="100" fill="url(#grid)" />
         </svg>
       </div>
-      
+
       {/* Header with Glass Morphism */}
       <div className="sticky top-0 z-50 w-full">
         <Header />
       </div>
 
       {/* Main Content */}
-      <div className={`flex flex-1 flex-col gap-6 w-screen overflow-y-auto thin-scrollbar relative z-10 ${
-        isFullscreenPage ? "p-0" : "px-4 py-8 md:px-8 lg:px-12"
-      }`}>
+      <div
+        className={`flex flex-1 flex-col gap-6 w-screen overflow-y-auto thin-scrollbar relative z-10 ${
+          isFullscreenPage ? "p-0" : "px-4 py-8 md:px-8 lg:px-12"
+        }`}
+      >
         <div className="animate-fadeIn">
           <Outlet />
         </div>
       </div>
-      
+
       {/* Modern footer */}
       <footer className="relative z-10 px-4 pb-6">
         <div className="text-center">
@@ -60,9 +81,10 @@ export function AppLayout() {
         </div>
       </footer>
 
-       {/* Custom CSS for animations */}
-       <style dangerouslySetInnerHTML={{
-        __html: `
+      {/* Custom CSS for animations */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
           @keyframes blob {
             0% { transform: translate(0px, 0px) scale(1); }
             33% { transform: translate(30px, -50px) scale(1.1); }
@@ -72,8 +94,9 @@ export function AppLayout() {
           .animate-blob { animation: blob 7s infinite; }
           .animation-delay-2000 { animation-delay: 2s; }
           .animation-delay-4000 { animation-delay: 4s; }
-        `
-      }} />
+        `,
+        }}
+      />
     </div>
   );
 }

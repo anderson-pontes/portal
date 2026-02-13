@@ -8,7 +8,7 @@ interface CarrosselProps {
 
 export default function Carrossel({
   images,
-  title = "Galeria",
+  // title = "Galeria",
 }: CarrosselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -48,7 +48,7 @@ export default function Carrossel({
     <div className="w-full max-w-4xl mx-auto px-4 py-6">
       {/* Container principal */}
       <div
-        className="relative w-full max-w-[800px] mx-auto overflow-hidden rounded-lg shadow-lg"
+        className="relative w-full mx-auto overflow-hidden rounded-lg shadow-lg"
         style={{
           paddingTop: "100%",
           position: "relative",
@@ -59,7 +59,7 @@ export default function Carrossel({
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="absolute top-0 left-0 w-full h-full object-cover border-0 p-0 m-0"
+          className="absolute top-0 left-0 w-full object-cover border-0 p-0 m-0"
         />
 
         {/* Botões de navegação */}
