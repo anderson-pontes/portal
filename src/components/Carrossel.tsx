@@ -1,104 +1,134 @@
-import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Maximize2, Minimize2 } from "lucide-react";
 
 interface CarrosselProps {
   images: string[];
-  title?: string;
 }
 
-export default function Carrossel({
-  images,
-  // title = "Galeria",
-}: CarrosselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Carrossel({ images }: CarrosselProps) {
+  const [index, setIndex] = useState(0);
+  const [isFull, setIsFull] = useState(false);
+  const [showControls, setShowControls] = useState(true);
 
+  const timerRef = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Navegação unificada (Mágica do Módulo %)
+  const navigate = useCallback(
+    (direction: "next" | "prev") => {
+      setIndex((prev) => {
+        const total = images.length;
+        if (direction === "next") return (prev + 1) % total;
+        return (prev - 1 + total) % total;
+      });
+    },
+    [images.length],
+  );
+
+  // Autoplay e Fullscreen Listener
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1,
-      );
-    }, 3000);
+    const autoPlay = setInterval(() => navigate("next"), 5000);
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+    const handleFullChange = () => {
+      setIsFull(!!document.fullscreenElement);
+      if (document.fullscreenElement) setShowControls(true);
+    };
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
-    );
+    document.addEventListener("fullscreenchange", handleFullChange);
+
+    return () => {
+      clearInterval(autoPlay);
+      document.removeEventListener("fullscreenchange", handleFullChange);
+    };
+  }, [navigate]);
+
+  // Controle de Mouse (Inatividade)
+  const handleMouseMove = () => {
+    if (!isFull) return;
+    setShowControls(true);
+    if (timerRef.current) window.clearTimeout(timerRef.current);
+    timerRef.current = window.setTimeout(() => setShowControls(false), 3000);
   };
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
-    );
+  const toggleFull = async () => {
+    if (!document.fullscreenElement)
+      await containerRef.current?.requestFullscreen();
+    else await document.exitFullscreen();
   };
 
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  if (!images || images.length === 0) {
-    return (
-      <div className="text-center text-gray-500">Nenhuma imagem disponível</div>
-    );
-  }
+  if (!images.length) return null;
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-6">
-      {/* Container principal */}
+    // Wrapper externo para layout da página
+    <div
+      className={
+        isFull ? "fixed inset-0 z-50" : "w-full max-w-4xl mx-auto px-4 py-6"
+      }
+    >
       <div
-        className="relative w-full mx-auto overflow-hidden rounded-lg shadow-lg"
-        style={{
-          paddingTop: "100%",
-          position: "relative",
-          boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
-        }}
+        ref={containerRef}
+        onMouseMove={handleMouseMove}
+        // AQUI ESTÁ A GRANDE SIMPLIFICAÇÃO DE CSS:
+        // 1. aspect-square: Substitui o padding-top hack.
+        // 2. group: Permite hover no modo janela.
+        className={`animate-slideIn relative overflow-hidden shadow-lg transition-all duration-300 group
+          ${
+            isFull
+              ? `w-screen h-screen bg-black flex items-center justify-center rounded-none ${!showControls && "cursor-none"}`
+              : "w-full aspect-square rounded-lg"
+          }`}
       >
-        {/* Imagem atual */}
         <img
-          src={images[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-          className="absolute top-0 left-0 w-full object-cover border-0 p-0 m-0"
+          src={images[index]}
+          alt={`Slide ${index + 1}`}
+          className={`transition-all duration-500 
+            ${
+              isFull
+                ? "w-full h-auto landscape:h-full landscape:w-auto object-contain"
+                : "absolute inset-0 w-full h-full object-cover"
+            }`}
         />
 
-        {/* Botões de navegação */}
-        <button
-          onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 z-10 transition"
-          aria-label="Anterior"
+        {/* --- CONTROLES (Visíveis se: Fullscreen+Timer Ativo OU Janela+Hover) --- */}
+        <div
+          className={`absolute inset-0 transition-opacity duration-500 
+          ${(isFull && showControls) || !isFull ? "opacity-100 md:opacity-0 md:group-hover:opacity-100" : "opacity-0"}`}
         >
-          <ChevronLeft size={24} />
-        </button>
-
-        <button
-          onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 z-10 transition"
-          aria-label="Próximo"
-        >
-          <ChevronRight size={24} />
-        </button>
-
-        {/* Contador */}
-        <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm">
-          {currentIndex + 1} / {images.length}
-        </div>
-      </div>
-
-      {/* Indicadores (pontos) */}
-      <div className="flex justify-center gap-2 mt-4">
-        {images.map((_, index) => (
           <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition ${
-              index === currentIndex
-                ? "bg-blue-600"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
-            aria-label={`Ir para slide ${index + 1}`}
-          />
-        ))}
+            onClick={toggleFull}
+            className="absolute top-4 right-4 bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
+          >
+            {isFull ? <Minimize2 size={24} /> : <Maximize2 size={24} />}
+          </button>
+
+          <button
+            onClick={() => navigate("prev")}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm"
+          >
+            <ChevronLeft size={32} />
+          </button>
+
+          <button
+            onClick={() => navigate("next")}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 backdrop-blur-sm"
+          >
+            <ChevronRight size={32} />
+          </button>
+
+          <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-md text-white px-3 py-1 rounded-full text-sm">
+            {index + 1} / {images.length}
+          </div>
+
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setIndex(i)}
+                className={`w-3 h-3 rounded-full transition shadow-md ${i === index ? "bg-blue-500 scale-110" : "bg-white/50 hover:bg-white"}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
