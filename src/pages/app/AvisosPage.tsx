@@ -22,10 +22,10 @@ export default function AvisosPage() {
         </div>
         <Carrossel
           images={[
-            "/public/desafinar.jpg",
-            "/public/meditacao.jpg",
-            "/public/escuta_interna.jpg",
-            "/public/suporte-dti.jpeg",
+            "/desafinar.jpg",
+            "/meditacao.jpg",
+            "/escuta_interna.jpg",
+            "/suporte-dti.jpeg",
           ]}
         />
       </div>
