@@ -8,6 +8,7 @@ import imgNuvem from "@/assets/nuvem.png";
 import imgGdap from "@/assets/gdap.png";
 import imgSigescon from "@/assets/contrato.png";
 import imgEadEsap from "@/assets/ead-esap.png";
+import imgJurisPge from "@/assets/juris-pge.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -69,6 +70,12 @@ export function Home() {
             image: imgEadEsap,
             externalLink: "https://eadesap.pge.pa.gov.br",
         },
+        {
+            title: "Juris PGE-PA",
+            description: "Base Unificada de Jurisprudências",
+            image: imgJurisPge,
+            externalLink: "https://juris.pge.pa.gov.br",
+        }
         
     ];
 
