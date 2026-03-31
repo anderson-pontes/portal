@@ -10,6 +10,7 @@ import imgSigescon from "@/assets/contrato.png";
 import imgEadEsap from "@/assets/ead-esap.png";
 import imgJurisPge from "@/assets/juris-pge.png";
 import imgNcaDigital from "@/assets/nca-digital.png";
+import imgSistemasLegados from "@/assets/sistemas-legados.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -82,6 +83,12 @@ export function Home() {
             description: "Plataforma para gerenciamento de solicitações de Análise de Prescrição e Carta de Anuência",
             image: imgNcaDigital,
             externalLink: "https://nca.pge.pa.gov.br",
+        },
+        {
+            title: "Sistemas Legados",
+            description: "Plataforma Integrada de Sistemas Legados",
+            image: imgSistemasLegados,
+            externalLink: "http://10.96.0.29:2000/",
         }
         
     ];
