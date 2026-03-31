@@ -9,6 +9,7 @@ import imgGdap from "@/assets/gdap.png";
 import imgSigescon from "@/assets/contrato.png";
 import imgEadEsap from "@/assets/ead-esap.png";
 import imgJurisPge from "@/assets/juris-pge.png";
+import imgNcaDigital from "@/assets/nca-digital.png";
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
@@ -75,6 +76,12 @@ export function Home() {
             description: "Base Unificada de Jurisprudências",
             image: imgJurisPge,
             externalLink: "https://juris.pge.pa.gov.br",
+        },
+        {
+            title: "NCA Digital",
+            description: "Plataforma para gerenciamento de solicitações de Análise de Prescrição e Carta de Anuência",
+            image: imgNcaDigital,
+            externalLink: "https://nca.pge.pa.gov.br",
         }
         
     ];
