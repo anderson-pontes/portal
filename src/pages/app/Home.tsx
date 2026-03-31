@@ -73,7 +73,7 @@ export function Home() {
             externalLink: "https://eadesap.pge.pa.gov.br",
         },
         {
-            title: "Juris PGE-PA",
+            title: "JURIS PGE-PA",
             description: "Base Unificada de Jurisprudências",
             image: imgJurisPge,
             externalLink: "https://juris.pge.pa.gov.br",
@@ -85,7 +85,7 @@ export function Home() {
             externalLink: "https://nca.pge.pa.gov.br",
         },
         {
-            title: "Sistemas Legados",
+            title: "SISTEMAS LEGADOS",
             description: "Plataforma Integrada de Sistemas Legados",
             image: imgSistemasLegados,
             externalLink: "http://10.96.0.29:2000/",
