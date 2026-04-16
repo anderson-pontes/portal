@@ -10,7 +10,8 @@ const glob = import.meta.glob<string>(
 
 const categoriaLabels: Record<string, string> = {
   "cloud pge": "Cloud PGE",
-  glpi: "GLPI",
+  "glpi": "GLPI",
+  "gdap":"GDAP"
 };
 
 export interface ManualPdf {

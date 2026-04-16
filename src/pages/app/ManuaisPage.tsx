@@ -16,12 +16,14 @@ import { toast } from "sonner";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-type CategoriaAtiva = "todos" | "cloud pge" | "glpi";
+type CategoriaAtiva = "todos" | "cloud pge" | "glpi" | "gdap";
 
 const TABS: { value: CategoriaAtiva; label: string }[] = [
   { value: "todos", label: "Todos" },
   { value: "cloud pge", label: "Cloud PGE" },
   { value: "glpi", label: "GLPI" },
+  { value: "gdap", label: "GDAP" },
+
 ];
 
 function filterManuais(
