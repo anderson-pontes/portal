@@ -11,7 +11,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { PdfThumbnail } from "@/components/PdfThumbnail";
-import { FileText, Search, Eye, Download, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Maximize2 } from "lucide-react";
+import { FileText, Search, Eye, Download, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Maximize2, ExternalLink, PlayCircle } from "lucide-react";
 import { toast } from "sonner";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
@@ -25,6 +25,8 @@ const TABS: { value: CategoriaAtiva; label: string }[] = [
   { value: "gdap", label: "GDAP" },
 
 ];
+
+const gdapVideosDriveUrl = import.meta.env.VITE_GDAP_VIDEOS_DRIVE_URL as string | undefined;
 
 function filterManuais(
   lista: ManualPdf[],
@@ -142,6 +144,49 @@ export default function ManuaisPage() {
               </button>
             ))}
           </div>
+
+          {categoriaAtiva === "gdap" && (
+            <div className="glass-card relative overflow-hidden rounded-3xl border border-slate-200/60 dark:border-white/10 mb-8 animate-slideIn">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-purple-500/10" />
+              <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between p-6 md:p-7">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-lg shadow-purple-500/20">
+                    <PlayCircle className="h-6 w-6" />
+                  </div>
+                  <div className="space-y-0">
+                    <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+                      Guias em vídeo da GDAP
+                    </h2>
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                      Acesse o drive com tutoriais em vídeo para apoiar o uso da GDAP.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-start gap-2 md:items-end">
+                  {gdapVideosDriveUrl ? (
+                    <Button asChild className="btn-gradient border-0 text-white rounded-2xl px-5 shadow-lg shadow-purple-500/20">
+                      <a href={gdapVideosDriveUrl} target="_blank" rel="noopener noreferrer" aria-label="Abrir drive com vídeos instrutivos GDAP">
+                        Abrir Drive
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="rounded-2xl px-5"
+                      disabled
+                      title="Defina VITE_GDAP_VIDEOS_DRIVE_URL para ativar este botão"
+                    >
+                      Abrir Drive
+                      <ExternalLink className="h-4 w-4" />
+                    </Button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Barra de busca */}
           <div className="relative mb-8 max-w-xl animate-fadeIn">
