@@ -109,14 +109,14 @@ export default function ManuaisPage() {
 
   return (
     <>
-      <Helmet>
+      <Helmet title="Manuais">
         <title>Manuais</title>
       </Helmet>
       <div className="min-h-screen relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section - igual à Home */}
-          <div className="text-center mb-12 animate-slideIn pt-4">
-            <h1 className="text-5xl md:text-6xl font-extrabold gradient-text mb-6 animate-scaleIn">
+          <div className="text-center mb-10 animate-slideIn pt-4">
+            <h1 className="text-5xl md:text-5xl font-extrabold gradient-text mb-6 animate-scaleIn">
               Manuais
             </h1>
             <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed animate-fadeIn">
