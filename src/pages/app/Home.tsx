@@ -12,10 +12,18 @@ import imgJurisPge from "@/assets/juris-pge.png";
 import imgNcaDigital from "@/assets/nca-digital.png";
 import imgSistemasLegados from "@/assets/sistemas-legados.png";
 import { Link } from "react-router-dom";
-import { ExternalLink } from 'lucide-react';
+import { CircleHelp, ExternalLink } from 'lucide-react';
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+
+type Flashcard = {
+    title: string;
+    description: string;
+    image: string;
+    externalLink?: string;
+};
 
 export function Home() {
-    const flashcards = [
+    const flashcards: Flashcard[] = [
         { title: "SIGESCON", description: "Sistema de Gestão de Contratos", image: imgSigescon, externalLink: "http://sigescon.pge.pa.gov.br/" },
         { title: "SIDA", description: "Sistema de Inteligência da Procuradoria da Dívida Ativa", image: imgSida, externalLink: "https://sida.pge.pa.gov.br" },
         { title: "LEXPGE", description: "Base de Atos Normativos da Procuradoria-Geral do Estado do Pará", image: imgLexPge, externalLink: "https://lex.pge.pa.gov.br/" },
@@ -30,18 +38,25 @@ export function Home() {
         { title: "SISTEMAS LEGADOS", description: "Plataforma Integrada de Sistemas Legados", image: imgSistemasLegados, externalLink: "http://10.96.0.29:2000/" }
     ];
 
-    const CardContent = ({ card }) => (
+    const CardContent = ({ card }: { card: Flashcard }) => (
         <>
-            {/* Ícone e Container aumentados para w-16 h-16 */}
-            <div className="relative z-10 w-16 h-16 shrink-0 bg-gradient-to-br from-blue-50/80 to-purple-50/80 rounded-xl p-3 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300 group-hover:rotate-3">
+            <span className="sr-only">{card.description}</span>
+            
+            {/* Tooltip flutuando acima do cartão (bottom-full) */}
+            <div className="pointer-events-none absolute left-1/2 bottom-full z-50 mb-2 w-[calc(100%-1rem)] -translate-x-1/2 rounded-xl bg-slate-900/95 px-3 py-2 text-xs font-medium text-white text-center opacity-0 shadow-xl backdrop-blur-sm transition-all duration-300 group-hover:mb-3 group-hover:opacity-100 group-focus-visible:mb-3 group-focus-visible:opacity-100">
+                {card.description}
+            </div>
+
+            {/* Ícone e Container */}
+            <div className="relative z-10 w-16 h-16 shrink-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-xl p-3 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300 group-hover:rotate-3">
                 <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-contain animate-float shadow-sm "
+                    className="w-full h-full object-contain animate-float"
                 />
             </div>
             
-            {/* Textos com fontes levemente maiores */}
+            {/* Textos */}
             <div className="relative z-10 ml-5 flex-1 overflow-hidden text-left">
                 <h3 className="text-lg font-bold text-slate-800 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
                     {card.title}
@@ -53,7 +68,7 @@ export function Home() {
                 <ExternalLink className="w-5 h-5" />
             </div>
 
-            {/* Gradiente animado original restaurado! */}
+            {/* Gradiente animado */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </>
     );
@@ -61,7 +76,6 @@ export function Home() {
     return (
         <>
             <Helmet title="Home" />
-            {/* Mantido o pt-10 e h-[calc] para travar o scroll, mas permitindo que o flex distribua o espaço */}
             <div className="relative w-full flex flex-col pt-10 px-4 overflow-hidden">
                 
                 <div className="max-w-7xl w-full mx-auto flex flex-col h-full">
@@ -77,16 +91,15 @@ export function Home() {
                         <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 mx-auto rounded-full animate-scaleIn" />
                     </div>
 
-                    {/* Cards Grid - Agora com gap-6 (horizontal) e gap-8 (vertical) para expandir e preencher o vazio */}
+                    {/* Cards Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 w-full">
                         {flashcards.map((card, index) => {
-                            {/* Deixei apenas a sua classe glass-card e os arredondamentos para limpar a cor de fundo */}
                             const cardClasses = `group relative glass-card rounded-2xl p-6 flex items-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-full`;
                             
                             return (
                                 <div 
                                     key={index} 
-                                    className="animate-slideIn w-full"
+                                    className="animate-slideIn w-full relative"
                                     style={{ animationDelay: `${index * 0.05}s` }}
                                 >
                                     {card.externalLink ? (
@@ -103,6 +116,25 @@ export function Home() {
                                             <CardContent card={card} />
                                         </Link>
                                     )}
+
+                                    <Popover>
+                                        <PopoverTrigger asChild>
+                                            <button
+                                                type="button"
+                                                className="sm:hidden absolute top-2 right-2 z-20 h-8 w-8 rounded-full bg-white/90 text-slate-600 border border-slate-200 shadow-sm flex items-center justify-center"
+                                                aria-label={`Ver descrição de ${card.title}`}
+                                            >
+                                                <CircleHelp className="h-4 w-4" />
+                                            </button>
+                                        </PopoverTrigger>
+                                        <PopoverContent
+                                            align="end"
+                                            sideOffset={8}
+                                            className="sm:hidden w-64 text-sm"
+                                        >
+                                            {card.description}
+                                        </PopoverContent>
+                                    </Popover>
                                 </div>
                             );
                         })}
