@@ -18,8 +18,10 @@ import imgProdepa from "@/assets/prodepa.png";
 import imgBrasaoPge from "@/assets/logo.svg";
 import imgTrt8 from "@/assets/trt8.png";
 import imgTrf1 from "@/assets/trf1.png";
+import imgIoepa from "@/assets/ioepa.png";
+import imgSeplad from "@/assets/seplad.png";
 import { Link } from "react-router-dom";
-import { CircleHelp, ExternalLink, Link2 } from "lucide-react";
+import { CircleHelp, Link2 } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -161,6 +163,18 @@ export function Home() {
       image: imgTrf1,
       externalLink: "https://www.trf1.jus.br/sjpa/home/",
     },
+    {
+      title: "IOEPA",
+      description: "Imprensa Oficial do Estado do Pará, responsável pela publicação e divulgação dos atos oficiais do governo estadual.",
+      image: imgIoepa,
+      externalLink: "https://www.ioepa.com.br/portal/",
+    },
+    {
+      title: "SEPLAD CONTRACHEQUE",
+      description: "Sistema de consulta ao contracheque da SEPLAD",
+      image: imgSeplad,
+      externalLink: "https://www.sistemas.pa.gov.br/portaldoservidor-sistemas/form_login.php?s=Y29udHJhY2hlcXVl",
+    },
   ];
 
   // Componente interno do cartão (reaproveitado para ambas as listas)
@@ -185,11 +199,6 @@ export function Home() {
           {card.title}
         </h3>
       </div>
-
-      <div className="relative z-10 shrink-0 w-10 h-10 rounded-full bg-slate-50/50 flex items-center justify-center text-slate-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-blue-50 group-hover:text-blue-600 transition-all duration-300">
-        <ExternalLink className="w-5 h-5" />
-      </div>
-
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
     </>
   );
