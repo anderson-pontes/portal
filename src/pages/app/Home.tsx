@@ -66,7 +66,7 @@ export function Home() {
       description:
         "Sistema de Suporte da Diretoria de Tecnologia da Informação",
       image: imgSuporteDtigd,
-      externalLink: "http://suportedti.pge.pa.gov.br/",
+      externalLink: "https://suportedti.pge.pa.gov.br/",
     },
     {
       title: "CLOUD PGE",

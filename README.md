@@ -127,6 +127,9 @@ O portal oferece acesso direto aos seguintes sistemas:
 | **CLOUD PGE** | Sistema de Armazenamento de Arquivos | ✅ Ativo |
 | **GDAP** | Gratificação de Desempenho de Apoio à Procuradoria | ✅ Ativo |
 | **e-CONSULTA** | Sistema de Consulta de Processos do e-PGE | ✅ Ativo |
+| **EAD ESAP** | Plataforma de ensino à distância da ESAP | ✅ Ativo |
+| **NCA DIGITAL** | Plataforma de Análise de Prescrição e Carta de Anuência | ✅ Ativo |
+| **SISTEMAS LEGADOS** | Plataforma integrada de sistemas legados | ✅ Ativo |
 
 ## 🎯 Funcionalidades
 
@@ -221,5 +224,5 @@ Este projeto é propriedade da **Procuradoria-Geral do Estado do Pará** e está
 
 <div align="center">
   <p><strong>Desenvolvido com ❤️ pela DTIGD - PGE-PA</strong></p>
-  <p>Copyright © 2024 Procuradoria-Geral do Estado do Pará</p>
+  <p>Copyright © 2026 Procuradoria-Geral do Estado do Pará</p>
 </div>
