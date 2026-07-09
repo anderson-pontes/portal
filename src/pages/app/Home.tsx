@@ -81,7 +81,7 @@ export function Home() {
       title: "GDAP",
       description: "Gratificação de Desempenho de Apoio à Procuradoria",
       image: imgGdap,
-      externalLink: "http://10.96.0.51/",
+      externalLink: "https://gdap.pge.pa.gov.br/",
     },
     {
       title: "e-CONSULTA",
